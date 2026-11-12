@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+**/.pbi/cache.abf
+**/.pbi/localSettings.json
+
+# Alternate local Power BI save. The portfolio uses maintenance_dashboard.pbix.
+/powerbi/maintenance_dashboard1.pbix
+/release/
