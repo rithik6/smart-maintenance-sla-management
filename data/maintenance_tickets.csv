@@ -1,0 +1,541 @@
+ticket_id,equipment_id,technician_id,issue_category,description,priority,status,created_at,first_response_at,resolved_at,sla_target_hours,estimated_downtime_hours
+1,9,7,Controls,B-03 Tester: drive reported a communication fault,High,Resolved,2026-01-01 20:47:00,2026-01-01 22:40:00,2026-01-02 11:37:00,12,5.64
+2,16,5,Electrical,C-04 Tester: motor overload relay tripped,High,Resolved,2026-01-02 09:02:00,2026-01-02 12:19:00,2026-01-02 18:18:00,12,3.77
+3,1,1,Mechanical,A-01 Press: belt tension below specification,Medium,Resolved,2026-01-02 10:34:00,2026-01-02 15:16:00,2026-01-03 13:49:00,24,0.00
+4,7,7,Controls,B-01 Conveyor: feedback signal drifted from its setpoint,High,Resolved,2026-01-02 15:51:00,2026-01-02 16:43:00,2026-01-03 00:44:00,12,3.50
+5,13,9,Process Quality,C-01 Sealer: verification check flagged inconsistent output,Medium,Resolved,2026-01-03 07:32:00,2026-01-03 10:32:00,2026-01-03 20:40:00,24,3.60
+6,6,3,Mechanical,A-06 Press: bearing noise during operation,Low,Resolved,2026-01-03 09:55:00,2026-01-03 17:42:00,2026-01-05 00:07:00,48,0.48
+7,19,9,Process Quality,D-01 Tester: output drifted outside process tolerance,Medium,Resolved,2026-01-03 16:24:00,2026-01-03 22:53:00,2026-01-04 08:02:00,24,0.19
+8,1,11,Pneumatics,A-01 Press: cylinder returned slowly,Medium,Resolved,2026-01-03 18:06:00,2026-01-04 16:12:00,2026-01-05 09:32:00,24,9.61
+9,12,9,Controls,B-06 Robot: position sensor missed a cycle,Medium,Resolved,2026-01-03 21:17:00,2026-01-04 17:58:00,2026-01-05 04:17:00,24,0.84
+10,16,9,Process Quality,C-04 Tester: verification check flagged inconsistent output,High,Resolved,2026-01-04 07:58:00,2026-01-04 09:55:00,2026-01-04 18:55:00,12,3.81
+11,23,8,Controls,D-05 Feeder: position sensor missed a cycle,Low,Resolved,2026-01-05 09:15:00,2026-01-05 11:21:00,2026-01-08 00:46:00,48,6.37
+12,7,1,Mechanical,B-01 Conveyor: drive vibration above normal,Medium,Resolved,2026-01-05 09:47:00,2026-01-05 16:24:00,2026-01-06 02:57:00,24,0.00
+13,22,3,Mechanical,D-04 Conveyor: bearing noise during operation,High,Resolved,2026-01-05 10:03:00,2026-01-05 12:34:00,2026-01-05 16:45:00,12,4.48
+14,4,4,Electrical,A-04 Robot: starter contactor failed to engage,High,Resolved,2026-01-05 10:38:00,2026-01-05 12:43:00,2026-01-05 18:30:00,12,4.65
+15,14,2,Mechanical,C-02 Conveyor: bearing noise during operation,High,Resolved,2026-01-05 13:25:00,2026-01-05 17:21:00,2026-01-05 23:47:00,12,5.44
+16,24,11,Pneumatics,D-06 Sealer: air pressure dropped during cycling,Medium,Resolved,2026-01-05 13:39:00,2026-01-07 03:12:00,2026-01-07 17:11:00,24,14.76
+17,23,1,Mechanical,D-05 Feeder: belt tension below specification,Medium,Resolved,2026-01-05 16:36:00,2026-01-05 20:27:00,2026-01-06 14:01:00,24,4.72
+18,2,9,Controls,A-02 Feeder: position sensor missed a cycle,Low,Resolved,2026-01-06 06:46:00,2026-01-06 09:47:00,2026-01-08 19:03:00,48,5.38
+19,15,3,Mechanical,C-03 Feeder: belt tension below specification,Low,Resolved,2026-01-06 06:50:00,2026-01-06 13:53:00,2026-01-07 20:14:00,48,0.00
+20,8,5,Electrical,B-02 Robot: starter contactor failed to engage,Low,Resolved,2026-01-06 07:55:00,2026-01-06 13:46:00,2026-01-09 07:20:00,48,5.24
+21,22,4,Electrical,D-04 Conveyor: starter contactor failed to engage,Low,Resolved,2026-01-06 17:05:00,2026-01-06 22:08:00,2026-01-08 14:31:00,48,0.00
+22,14,1,Mechanical,C-02 Conveyor: belt tension below specification,Low,Resolved,2026-01-06 17:58:00,2026-01-07 00:36:00,2026-01-07 14:41:00,48,0.58
+23,13,11,Pneumatics,C-01 Sealer: cylinder returned slowly,Medium,Resolved,2026-01-07 08:24:00,2026-01-07 20:13:00,2026-01-08 09:16:00,24,4.00
+24,9,4,Electrical,B-03 Tester: intermittent power at the drive,Critical,Resolved,2026-01-07 19:34:00,2026-01-08 00:20:00,2026-01-08 04:58:00,4,9.33
+25,23,1,Mechanical,D-05 Feeder: bearing noise during operation,Low,Resolved,2026-01-08 15:51:00,2026-01-09 09:12:00,2026-01-11 03:18:00,48,1.24
+26,13,11,Pneumatics,C-01 Sealer: cylinder returned slowly,High,Resolved,2026-01-08 17:05:00,2026-01-08 20:25:00,2026-01-09 00:49:00,12,2.25
+27,12,2,Mechanical,B-06 Robot: bearing noise during operation,Medium,Resolved,2026-01-08 19:03:00,2026-01-10 07:07:00,2026-01-11 00:13:00,24,1.79
+28,22,9,Controls,D-04 Conveyor: drive reported a communication fault,Medium,Resolved,2026-01-10 15:39:00,2026-01-10 17:34:00,2026-01-11 15:05:00,24,0.00
+29,7,5,Electrical,B-01 Conveyor: starter contactor failed to engage,High,Resolved,2026-01-10 17:06:00,2026-01-11 12:51:00,2026-01-12 01:43:00,12,22.06
+30,10,3,Mechanical,B-04 Feeder: belt tension below specification,Medium,Resolved,2026-01-10 19:35:00,2026-01-10 23:04:00,2026-01-11 14:38:00,24,0.00
+31,7,5,Electrical,B-01 Conveyor: motor overload relay tripped,High,Resolved,2026-01-11 08:15:00,2026-01-11 12:22:00,2026-01-12 00:26:00,12,4.24
+32,7,9,Controls,B-01 Conveyor: drive reported a communication fault,High,Resolved,2026-01-11 09:33:00,2026-01-11 11:25:00,2026-01-12 01:06:00,12,5.26
+33,21,4,Electrical,D-03 Robot: starter contactor failed to engage,Critical,Resolved,2026-01-11 14:39:00,2026-01-11 15:22:00,2026-01-11 19:30:00,4,4.83
+34,21,8,Controls,D-03 Robot: position sensor missed a cycle,High,Resolved,2026-01-13 07:27:00,2026-01-13 08:46:00,2026-01-13 20:08:00,12,2.70
+35,10,9,Controls,B-04 Feeder: position sensor missed a cycle,Medium,Resolved,2026-01-14 11:49:00,2026-01-14 14:25:00,2026-01-15 07:22:00,24,0.00
+36,7,2,Mechanical,B-01 Conveyor: belt tension below specification,Medium,Resolved,2026-01-14 16:56:00,2026-01-16 06:04:00,2026-01-16 16:11:00,24,2.94
+37,17,9,Process Quality,C-05 Sealer: recipe change required recalibration,Low,Resolved,2026-01-15 08:14:00,2026-01-15 10:34:00,2026-01-16 12:50:00,48,2.86
+38,4,2,Mechanical,A-04 Robot: belt tension below specification,Low,Resolved,2026-01-16 08:56:00,2026-01-18 01:11:00,2026-01-20 04:51:00,48,2.88
+39,9,7,Process Quality,B-03 Tester: output drifted outside process tolerance,Low,Resolved,2026-01-16 12:15:00,2026-01-16 13:26:00,2026-01-17 06:24:00,48,0.00
+40,10,2,Mechanical,B-04 Feeder: drive vibration above normal,Medium,Resolved,2026-01-17 10:50:00,2026-01-17 13:11:00,2026-01-17 20:39:00,24,2.63
+41,12,9,Controls,B-06 Robot: drive reported a communication fault,Medium,Resolved,2026-01-17 13:29:00,2026-01-18 22:58:00,2026-01-19 13:33:00,24,3.12
+42,20,2,Mechanical,D-02 Press: drive vibration above normal,High,Resolved,2026-01-17 19:10:00,2026-01-17 20:02:00,2026-01-18 10:59:00,12,8.92
+43,13,11,Pneumatics,C-01 Sealer: air leak detected at the valve manifold,Medium,Resolved,2026-01-18 11:03:00,2026-01-18 12:30:00,2026-01-19 06:04:00,24,3.39
+44,23,1,Mechanical,D-05 Feeder: drive vibration above normal,High,Resolved,2026-01-18 12:12:00,2026-01-18 21:08:00,2026-01-19 03:06:00,12,6.75
+45,3,7,Controls,A-03 Conveyor: feedback signal drifted from its setpoint,Medium,Resolved,2026-01-19 06:01:00,2026-01-19 12:12:00,2026-01-19 22:46:00,24,1.20
+46,12,8,Controls,B-06 Robot: position sensor missed a cycle,Medium,Resolved,2026-01-20 19:04:00,2026-01-20 20:11:00,2026-01-21 15:11:00,24,0.07
+47,5,8,Process Quality,A-05 Tester: recipe change required recalibration,Critical,Resolved,2026-01-22 21:22:00,2026-01-22 22:11:00,2026-01-23 01:13:00,4,2.17
+48,7,2,Mechanical,B-01 Conveyor: belt tension below specification,Medium,Resolved,2026-01-23 03:54:00,2026-01-23 09:10:00,2026-01-24 09:15:00,24,4.70
+49,5,6,Electrical,A-05 Tester: starter contactor failed to engage,High,Resolved,2026-01-23 10:17:00,2026-01-23 21:35:00,2026-01-24 01:41:00,12,8.96
+50,23,10,Pneumatics,D-05 Feeder: cylinder returned slowly,Medium,Resolved,2026-01-23 11:07:00,2026-01-24 21:14:00,2026-01-25 15:22:00,24,16.95
+51,10,12,Pneumatics,B-04 Feeder: air pressure dropped during cycling,Medium,Resolved,2026-01-23 20:28:00,2026-01-23 22:53:00,2026-01-24 08:51:00,24,0.00
+52,8,8,Controls,B-02 Robot: feedback signal drifted from its setpoint,High,Resolved,2026-01-23 21:15:00,2026-01-23 22:43:00,2026-01-24 07:55:00,12,6.44
+53,23,7,Controls,D-05 Feeder: position sensor missed a cycle,Medium,Resolved,2026-01-23 21:49:00,2026-01-24 00:07:00,2026-01-24 17:20:00,24,0.19
+54,10,10,Pneumatics,B-04 Feeder: air leak detected at the valve manifold,Medium,Resolved,2026-01-24 07:33:00,2026-01-24 09:01:00,2026-01-25 04:16:00,24,6.52
+55,7,2,Mechanical,B-01 Conveyor: belt tension below specification,Medium,Resolved,2026-01-24 14:17:00,2026-01-25 07:08:00,2026-01-25 17:28:00,24,0.11
+56,6,3,Mechanical,A-06 Press: drive vibration above normal,Medium,Resolved,2026-01-24 16:30:00,2026-01-24 22:41:00,2026-01-25 09:37:00,24,2.01
+57,7,1,Mechanical,B-01 Conveyor: bearing noise during operation,Low,Resolved,2026-01-25 12:24:00,2026-01-25 22:09:00,2026-01-27 16:17:00,48,1.17
+58,7,3,Mechanical,B-01 Conveyor: belt tension below specification,Low,Resolved,2026-01-27 07:02:00,2026-01-27 13:41:00,2026-01-29 13:20:00,48,4.81
+59,22,8,Controls,D-04 Conveyor: drive reported a communication fault,Medium,Resolved,2026-01-27 08:05:00,2026-01-27 12:55:00,2026-01-28 18:07:00,24,8.69
+60,13,9,Process Quality,C-01 Sealer: verification check flagged inconsistent output,Low,Resolved,2026-01-27 11:46:00,2026-01-27 18:11:00,2026-01-29 13:52:00,48,3.64
+61,3,7,Controls,A-03 Conveyor: drive reported a communication fault,Medium,Resolved,2026-01-27 18:35:00,2026-01-28 00:45:00,2026-01-28 19:39:00,24,0.98
+62,7,1,Mechanical,B-01 Conveyor: belt tension below specification,Low,Resolved,2026-01-27 20:11:00,2026-01-27 23:02:00,2026-01-29 08:51:00,48,2.86
+63,3,1,Mechanical,A-03 Conveyor: bearing noise during operation,Medium,Resolved,2026-01-27 23:04:00,2026-01-28 00:11:00,2026-01-28 17:30:00,24,5.56
+64,17,12,Pneumatics,C-05 Sealer: cylinder returned slowly,Low,Resolved,2026-01-28 11:37:00,2026-01-28 22:12:00,2026-01-30 06:38:00,48,4.52
+65,13,12,Pneumatics,C-01 Sealer: cylinder returned slowly,Low,Resolved,2026-01-28 13:51:00,2026-01-28 15:52:00,2026-01-29 18:32:00,48,3.17
+66,17,9,Process Quality,C-05 Sealer: output drifted outside process tolerance,High,Resolved,2026-01-28 14:25:00,2026-01-28 18:52:00,2026-01-28 23:17:00,12,5.69
+67,11,6,Electrical,B-05 Conveyor: intermittent power at the drive,Medium,Resolved,2026-01-28 14:57:00,2026-01-28 20:42:00,2026-01-29 06:21:00,24,0.00
+68,7,1,Mechanical,B-01 Conveyor: bearing noise during operation,Medium,Resolved,2026-01-29 13:58:00,2026-01-30 23:12:00,2026-01-31 06:31:00,24,0.00
+69,2,3,Mechanical,A-02 Feeder: belt tension below specification,Low,Resolved,2026-01-29 15:01:00,2026-01-29 20:58:00,2026-01-31 05:21:00,48,0.41
+70,4,6,Electrical,A-04 Robot: starter contactor failed to engage,Medium,Resolved,2026-01-30 06:56:00,2026-01-30 12:51:00,2026-01-30 22:36:00,24,0.00
+71,2,9,Controls,A-02 Feeder: feedback signal drifted from its setpoint,Critical,Resolved,2026-01-30 18:39:00,2026-01-30 22:46:00,2026-01-31 00:52:00,4,5.61
+72,17,11,Pneumatics,C-05 Sealer: air pressure dropped during cycling,Medium,Resolved,2026-01-31 12:07:00,2026-01-31 19:13:00,2026-02-01 02:45:00,24,4.83
+73,11,9,Controls,B-05 Conveyor: drive reported a communication fault,Medium,Resolved,2026-01-31 12:21:00,2026-01-31 13:56:00,2026-02-01 02:31:00,24,0.51
+74,4,8,Controls,A-04 Robot: feedback signal drifted from its setpoint,High,Resolved,2026-01-31 13:04:00,2026-01-31 17:39:00,2026-02-01 01:37:00,12,4.65
+75,21,8,Controls,D-03 Robot: position sensor missed a cycle,Low,Resolved,2026-01-31 14:17:00,2026-01-31 21:38:00,2026-02-02 15:23:00,48,0.00
+76,14,3,Mechanical,C-02 Conveyor: bearing noise during operation,Medium,Resolved,2026-01-31 21:12:00,2026-02-01 00:51:00,2026-02-01 11:25:00,24,3.61
+77,14,4,Electrical,C-02 Conveyor: motor overload relay tripped,Low,Resolved,2026-02-01 14:28:00,2026-02-01 17:48:00,2026-02-04 06:08:00,48,4.30
+78,14,1,Mechanical,C-02 Conveyor: drive vibration above normal,Medium,Resolved,2026-02-01 15:26:00,2026-02-02 11:06:00,2026-02-03 00:43:00,24,7.67
+79,19,9,Process Quality,D-01 Tester: output drifted outside process tolerance,Medium,Resolved,2026-02-01 19:39:00,2026-02-02 03:05:00,2026-02-02 09:30:00,24,0.00
+80,4,6,Electrical,A-04 Robot: starter contactor failed to engage,Low,Resolved,2026-02-02 06:24:00,2026-02-02 09:34:00,2026-02-04 03:37:00,48,3.65
+81,20,11,Pneumatics,D-02 Press: air pressure dropped during cycling,Medium,Resolved,2026-02-02 11:53:00,2026-02-02 13:33:00,2026-02-03 03:56:00,24,4.64
+82,1,2,Mechanical,A-01 Press: bearing noise during operation,High,Resolved,2026-02-02 21:15:00,2026-02-03 00:20:00,2026-02-03 06:13:00,12,4.81
+83,5,7,Controls,A-05 Tester: feedback signal drifted from its setpoint,Low,Resolved,2026-02-03 02:38:00,2026-02-03 10:57:00,2026-02-05 22:47:00,48,6.70
+84,19,7,Controls,D-01 Tester: feedback signal drifted from its setpoint,Medium,Resolved,2026-02-03 13:43:00,2026-02-03 18:52:00,2026-02-04 17:01:00,24,7.13
+85,16,7,Process Quality,C-04 Tester: output drifted outside process tolerance,Low,Resolved,2026-02-03 14:06:00,2026-02-03 19:16:00,2026-02-06 06:08:00,48,4.66
+86,19,8,Controls,D-01 Tester: drive reported a communication fault,Medium,Resolved,2026-02-03 16:58:00,2026-02-03 21:45:00,2026-02-04 04:11:00,24,3.77
+87,10,2,Mechanical,B-04 Feeder: drive vibration above normal,Medium,Resolved,2026-02-04 19:02:00,2026-02-04 19:44:00,2026-02-05 16:12:00,24,0.00
+88,17,9,Process Quality,C-05 Sealer: verification check flagged inconsistent output,High,Resolved,2026-02-04 19:14:00,2026-02-05 03:09:00,2026-02-05 07:09:00,12,5.92
+89,5,7,Process Quality,A-05 Tester: output drifted outside process tolerance,Low,Resolved,2026-02-05 07:15:00,2026-02-06 18:46:00,2026-02-09 01:05:00,48,7.53
+90,13,12,Pneumatics,C-01 Sealer: air leak detected at the valve manifold,Medium,Resolved,2026-02-05 16:12:00,2026-02-05 19:39:00,2026-02-06 08:50:00,24,0.00
+91,13,7,Process Quality,C-01 Sealer: output drifted outside process tolerance,Medium,Resolved,2026-02-05 16:58:00,2026-02-05 20:08:00,2026-02-06 02:06:00,24,0.00
+92,13,11,Pneumatics,C-01 Sealer: air leak detected at the valve manifold,High,Resolved,2026-02-05 18:55:00,2026-02-05 22:13:00,2026-02-06 04:56:00,12,4.46
+93,9,7,Controls,B-03 Tester: drive reported a communication fault,Medium,Resolved,2026-02-05 20:27:00,2026-02-05 22:13:00,2026-02-06 08:46:00,24,2.34
+94,14,8,Controls,C-02 Conveyor: drive reported a communication fault,Medium,Resolved,2026-02-06 07:35:00,2026-02-06 10:34:00,2026-02-07 05:44:00,24,1.36
+95,13,12,Pneumatics,C-01 Sealer: air pressure dropped during cycling,High,Resolved,2026-02-06 12:32:00,2026-02-07 05:21:00,2026-02-07 09:15:00,12,10.38
+96,4,2,Mechanical,A-04 Robot: drive vibration above normal,High,Resolved,2026-02-06 17:44:00,2026-02-06 19:43:00,2026-02-07 03:29:00,12,3.31
+97,22,3,Mechanical,D-04 Conveyor: belt tension below specification,Low,Resolved,2026-02-06 21:04:00,2026-02-07 04:36:00,2026-02-09 03:02:00,48,3.31
+98,7,5,Electrical,B-01 Conveyor: starter contactor failed to engage,Medium,Resolved,2026-02-08 12:55:00,2026-02-08 16:21:00,2026-02-09 01:18:00,24,1.76
+99,9,9,Process Quality,B-03 Tester: output drifted outside process tolerance,Low,Resolved,2026-02-08 13:13:00,2026-02-10 01:29:00,2026-02-10 22:57:00,48,2.15
+100,19,5,Electrical,D-01 Tester: motor overload relay tripped,Medium,Resolved,2026-02-08 14:53:00,2026-02-09 08:12:00,2026-02-09 22:01:00,24,2.44
+101,17,12,Pneumatics,C-05 Sealer: air leak detected at the valve manifold,Medium,Resolved,2026-02-08 16:53:00,2026-02-08 18:02:00,2026-02-09 08:24:00,24,0.00
+102,4,7,Controls,A-04 Robot: position sensor missed a cycle,Medium,Resolved,2026-02-08 17:56:00,2026-02-08 23:24:00,2026-02-09 21:19:00,24,0.00
+103,20,12,Pneumatics,D-02 Press: air leak detected at the valve manifold,Medium,Resolved,2026-02-08 21:27:00,2026-02-09 00:45:00,2026-02-09 13:37:00,24,0.00
+104,21,9,Controls,D-03 Robot: feedback signal drifted from its setpoint,Medium,Resolved,2026-02-09 10:24:00,2026-02-09 12:48:00,2026-02-10 03:21:00,24,4.02
+105,4,8,Controls,A-04 Robot: feedback signal drifted from its setpoint,High,Resolved,2026-02-09 11:09:00,2026-02-09 13:54:00,2026-02-09 20:43:00,12,2.09
+106,11,3,Mechanical,B-05 Conveyor: bearing noise during operation,High,Resolved,2026-02-09 15:46:00,2026-02-09 19:29:00,2026-02-10 02:25:00,12,4.43
+107,1,1,Mechanical,A-01 Press: bearing noise during operation,Medium,Resolved,2026-02-09 17:18:00,2026-02-10 03:06:00,2026-02-10 22:06:00,24,8.71
+108,19,9,Process Quality,D-01 Tester: verification check flagged inconsistent output,Medium,Resolved,2026-02-10 07:21:00,2026-02-10 11:00:00,2026-02-11 05:46:00,24,0.00
+109,8,5,Electrical,B-02 Robot: motor overload relay tripped,Medium,Resolved,2026-02-10 11:26:00,2026-02-10 12:08:00,2026-02-10 18:18:00,24,1.42
+110,20,2,Mechanical,D-02 Press: bearing noise during operation,Low,Resolved,2026-02-10 16:08:00,2026-02-10 20:12:00,2026-02-11 15:00:00,48,0.00
+111,14,6,Electrical,C-02 Conveyor: intermittent power at the drive,Critical,Resolved,2026-02-10 19:23:00,2026-02-10 20:38:00,2026-02-10 21:25:00,4,1.58
+112,7,1,Mechanical,B-01 Conveyor: belt tension below specification,Medium,Resolved,2026-02-10 20:11:00,2026-02-10 23:58:00,2026-02-11 18:51:00,24,0.00
+113,13,9,Process Quality,C-01 Sealer: recipe change required recalibration,Low,Resolved,2026-02-11 13:35:00,2026-02-12 03:39:00,2026-02-12 19:43:00,48,0.06
+114,20,12,Pneumatics,D-02 Press: air leak detected at the valve manifold,Medium,Resolved,2026-02-11 13:48:00,2026-02-11 19:02:00,2026-02-12 10:14:00,24,3.42
+115,12,4,Electrical,B-06 Robot: intermittent power at the drive,Low,Resolved,2026-02-11 18:26:00,2026-02-12 00:27:00,2026-02-13 00:05:00,48,0.00
+116,7,5,Electrical,B-01 Conveyor: motor overload relay tripped,Medium,Resolved,2026-02-11 18:40:00,2026-02-11 21:38:00,2026-02-12 20:10:00,24,0.00
+117,3,1,Mechanical,A-03 Conveyor: belt tension below specification,Medium,Resolved,2026-02-11 19:42:00,2026-02-11 21:17:00,2026-02-12 18:50:00,24,2.02
+118,13,11,Pneumatics,C-01 Sealer: cylinder returned slowly,Medium,Resolved,2026-02-12 09:06:00,2026-02-12 10:03:00,2026-02-13 07:08:00,24,5.80
+119,23,2,Mechanical,D-05 Feeder: belt tension below specification,Medium,Resolved,2026-02-12 14:42:00,2026-02-12 17:28:00,2026-02-13 22:03:00,24,7.74
+120,8,9,Controls,B-02 Robot: feedback signal drifted from its setpoint,Low,Resolved,2026-02-13 12:19:00,2026-02-15 04:52:00,2026-02-17 10:39:00,48,4.57
+121,23,10,Pneumatics,D-05 Feeder: air pressure dropped during cycling,Medium,Resolved,2026-02-13 18:48:00,2026-02-13 21:36:00,2026-02-15 03:13:00,24,0.00
+122,16,9,Controls,C-04 Tester: feedback signal drifted from its setpoint,Low,Resolved,2026-02-14 07:54:00,2026-02-14 22:22:00,2026-02-15 10:22:00,48,2.10
+123,24,12,Pneumatics,D-06 Sealer: cylinder returned slowly,High,Resolved,2026-02-14 09:11:00,2026-02-14 15:13:00,2026-02-14 20:15:00,12,3.30
+124,12,9,Controls,B-06 Robot: position sensor missed a cycle,Medium,Resolved,2026-02-14 11:35:00,2026-02-14 12:14:00,2026-02-14 20:32:00,24,2.01
+125,22,3,Mechanical,D-04 Conveyor: bearing noise during operation,Medium,Resolved,2026-02-14 18:05:00,2026-02-14 22:33:00,2026-02-15 19:33:00,24,6.87
+126,5,8,Controls,A-05 Tester: feedback signal drifted from its setpoint,Medium,Resolved,2026-02-14 20:42:00,2026-02-14 22:59:00,2026-02-15 12:25:00,24,1.61
+127,2,2,Mechanical,A-02 Feeder: drive vibration above normal,Low,Resolved,2026-02-15 07:51:00,2026-02-18 04:43:00,2026-02-19 12:52:00,48,8.17
+128,14,3,Mechanical,C-02 Conveyor: drive vibration above normal,Low,Resolved,2026-02-15 20:04:00,2026-02-16 00:27:00,2026-02-17 18:02:00,48,0.00
+129,5,8,Process Quality,A-05 Tester: verification check flagged inconsistent output,Low,Resolved,2026-02-16 06:32:00,2026-02-16 09:05:00,2026-02-17 06:28:00,48,1.95
+130,7,9,Controls,B-01 Conveyor: feedback signal drifted from its setpoint,High,Resolved,2026-02-16 18:50:00,2026-02-16 22:24:00,2026-02-17 06:25:00,12,4.56
+131,11,7,Controls,B-05 Conveyor: position sensor missed a cycle,Low,Resolved,2026-02-16 20:08:00,2026-02-17 11:44:00,2026-02-18 10:16:00,48,0.74
+132,22,5,Electrical,D-04 Conveyor: intermittent power at the drive,Medium,Resolved,2026-02-17 19:49:00,2026-02-18 04:27:00,2026-02-18 23:54:00,24,3.69
+133,7,3,Mechanical,B-01 Conveyor: belt tension below specification,High,Resolved,2026-02-18 06:14:00,2026-02-18 12:46:00,2026-02-19 01:21:00,12,7.98
+134,14,2,Mechanical,C-02 Conveyor: belt tension below specification,Medium,Resolved,2026-02-18 09:07:00,2026-02-18 12:11:00,2026-02-19 02:52:00,24,5.68
+135,7,7,Controls,B-01 Conveyor: drive reported a communication fault,Low,Resolved,2026-02-18 10:53:00,2026-02-18 17:39:00,2026-02-19 16:35:00,48,2.02
+136,7,2,Mechanical,B-01 Conveyor: belt tension below specification,Low,Resolved,2026-02-19 16:26:00,2026-02-19 20:52:00,2026-02-21 02:50:00,48,0.00
+137,20,1,Mechanical,D-02 Press: belt tension below specification,High,Resolved,2026-02-21 09:18:00,2026-02-21 13:57:00,2026-02-21 23:31:00,12,5.42
+138,6,1,Mechanical,A-06 Press: drive vibration above normal,High,Resolved,2026-02-21 16:53:00,2026-02-21 17:42:00,2026-02-22 04:10:00,12,4.97
+139,19,8,Process Quality,D-01 Tester: recipe change required recalibration,Low,Resolved,2026-02-21 19:52:00,2026-02-22 10:21:00,2026-02-23 23:56:00,48,0.00
+140,7,2,Mechanical,B-01 Conveyor: bearing noise during operation,Medium,Resolved,2026-02-21 21:21:00,2026-02-22 01:27:00,2026-02-22 12:54:00,24,3.40
+141,15,2,Mechanical,C-03 Feeder: bearing noise during operation,Medium,Resolved,2026-02-22 14:17:00,2026-02-23 03:54:00,2026-02-23 16:36:00,24,0.00
+142,2,1,Mechanical,A-02 Feeder: belt tension below specification,Medium,Resolved,2026-02-22 20:08:00,2026-02-22 22:43:00,2026-02-23 22:05:00,24,7.67
+143,19,9,Process Quality,D-01 Tester: verification check flagged inconsistent output,Medium,Resolved,2026-02-23 06:41:00,2026-02-23 09:11:00,2026-02-24 01:04:00,24,0.00
+144,13,9,Process Quality,C-01 Sealer: recipe change required recalibration,Medium,Resolved,2026-02-23 07:23:00,2026-02-23 10:41:00,2026-02-24 11:47:00,24,0.00
+145,17,9,Process Quality,C-05 Sealer: verification check flagged inconsistent output,High,Resolved,2026-02-23 09:04:00,2026-02-23 09:58:00,2026-02-23 19:49:00,12,5.93
+146,20,1,Mechanical,D-02 Press: belt tension below specification,High,Resolved,2026-02-23 14:29:00,2026-02-24 06:49:00,2026-02-24 11:57:00,12,8.24
+147,4,3,Mechanical,A-04 Robot: belt tension below specification,Low,Resolved,2026-02-24 13:06:00,2026-02-24 16:04:00,2026-02-25 04:46:00,48,0.90
+148,16,8,Controls,C-04 Tester: drive reported a communication fault,High,Resolved,2026-02-24 19:50:00,2026-02-24 23:04:00,2026-02-25 08:38:00,12,3.70
+149,7,3,Mechanical,B-01 Conveyor: drive vibration above normal,Low,Resolved,2026-02-24 20:17:00,2026-02-25 10:36:00,2026-02-26 19:40:00,48,2.94
+150,15,3,Mechanical,C-03 Feeder: belt tension below specification,Low,Resolved,2026-02-24 20:18:00,2026-02-24 23:45:00,2026-02-26 15:56:00,48,0.47
+151,1,3,Mechanical,A-01 Press: drive vibration above normal,Low,Resolved,2026-02-24 21:51:00,2026-02-26 00:55:00,2026-02-26 09:45:00,48,1.50
+152,13,10,Pneumatics,C-01 Sealer: air leak detected at the valve manifold,Medium,Resolved,2026-02-25 10:16:00,2026-02-26 13:09:00,2026-02-26 16:40:00,24,5.21
+153,20,1,Mechanical,D-02 Press: drive vibration above normal,Critical,Resolved,2026-02-26 07:29:00,2026-02-26 07:58:00,2026-02-26 12:08:00,4,3.70
+154,23,2,Mechanical,D-05 Feeder: drive vibration above normal,Low,Resolved,2026-02-26 09:17:00,2026-02-28 21:41:00,2026-03-03 07:23:00,48,6.37
+155,20,12,Pneumatics,D-02 Press: air leak detected at the valve manifold,Medium,Resolved,2026-02-26 11:21:00,2026-02-26 15:30:00,2026-02-27 16:51:00,24,4.48
+156,5,7,Process Quality,A-05 Tester: recipe change required recalibration,Medium,Resolved,2026-02-27 06:14:00,2026-02-27 07:55:00,2026-02-28 00:37:00,24,0.68
+157,12,7,Controls,B-06 Robot: drive reported a communication fault,Medium,Resolved,2026-02-27 19:24:00,2026-02-27 20:16:00,2026-02-28 06:05:00,24,1.28
+158,21,4,Electrical,D-03 Robot: starter contactor failed to engage,Medium,Resolved,2026-02-28 14:59:00,2026-03-02 04:29:00,2026-03-03 01:17:00,24,16.64
+159,1,2,Mechanical,A-01 Press: bearing noise during operation,Medium,Resolved,2026-03-01 19:23:00,2026-03-01 20:45:00,2026-03-02 15:48:00,24,4.39
+160,5,7,Process Quality,A-05 Tester: recipe change required recalibration,Medium,Resolved,2026-03-02 08:56:00,2026-03-02 12:50:00,2026-03-02 20:43:00,24,2.26
+161,10,3,Mechanical,B-04 Feeder: belt tension below specification,Medium,Resolved,2026-03-02 10:53:00,2026-03-02 12:03:00,2026-03-03 15:17:00,24,5.43
+162,8,2,Mechanical,B-02 Robot: bearing noise during operation,Low,Resolved,2026-03-02 15:22:00,2026-03-03 02:19:00,2026-03-03 18:22:00,48,0.00
+163,7,8,Controls,B-01 Conveyor: position sensor missed a cycle,Medium,Resolved,2026-03-02 17:47:00,2026-03-03 20:33:00,2026-03-04 12:42:00,24,0.00
+164,19,8,Process Quality,D-01 Tester: recipe change required recalibration,Low,Resolved,2026-03-03 07:07:00,2026-03-03 20:44:00,2026-03-04 22:24:00,48,4.31
+165,20,11,Pneumatics,D-02 Press: air leak detected at the valve manifold,Medium,Resolved,2026-03-03 12:55:00,2026-03-04 04:47:00,2026-03-05 03:16:00,24,9.06
+166,2,7,Controls,A-02 Feeder: feedback signal drifted from its setpoint,Medium,Resolved,2026-03-03 18:22:00,2026-03-03 22:09:00,2026-03-04 08:00:00,24,3.25
+167,5,8,Process Quality,A-05 Tester: verification check flagged inconsistent output,High,Resolved,2026-03-03 18:59:00,2026-03-03 19:53:00,2026-03-04 00:22:00,12,3.18
+168,2,8,Controls,A-02 Feeder: position sensor missed a cycle,Medium,Resolved,2026-03-03 20:36:00,2026-03-04 00:26:00,2026-03-04 10:23:00,24,0.00
+169,14,7,Controls,C-02 Conveyor: position sensor missed a cycle,Low,Resolved,2026-03-04 18:13:00,2026-03-05 17:34:00,2026-03-06 16:04:00,48,5.10
+170,14,7,Controls,C-02 Conveyor: position sensor missed a cycle,High,Resolved,2026-03-05 06:24:00,2026-03-05 09:23:00,2026-03-05 14:04:00,12,1.86
+171,23,3,Mechanical,D-05 Feeder: belt tension below specification,High,Resolved,2026-03-05 17:04:00,2026-03-05 22:31:00,2026-03-06 01:29:00,12,2.06
+172,21,7,Controls,D-03 Robot: position sensor missed a cycle,Medium,Resolved,2026-03-06 09:53:00,2026-03-06 10:38:00,2026-03-06 22:46:00,24,0.87
+173,13,2,Mechanical,C-01 Sealer: belt tension below specification,Medium,Resolved,2026-03-06 14:16:00,2026-03-06 16:47:00,2026-03-07 03:49:00,24,0.00
+174,4,9,Controls,A-04 Robot: feedback signal drifted from its setpoint,High,Resolved,2026-03-06 15:30:00,2026-03-06 17:18:00,2026-03-07 06:11:00,12,9.46
+175,5,7,Process Quality,A-05 Tester: verification check flagged inconsistent output,Low,Resolved,2026-03-06 19:21:00,2026-03-07 03:32:00,2026-03-07 22:15:00,48,2.13
+176,1,10,Pneumatics,A-01 Press: air leak detected at the valve manifold,Low,Resolved,2026-03-06 20:32:00,2026-03-06 22:39:00,2026-03-08 19:26:00,48,4.81
+177,23,8,Controls,D-05 Feeder: feedback signal drifted from its setpoint,Medium,Resolved,2026-03-07 06:09:00,2026-03-07 10:12:00,2026-03-08 00:54:00,24,2.87
+178,21,6,Electrical,D-03 Robot: intermittent power at the drive,Medium,Resolved,2026-03-07 06:17:00,2026-03-07 08:57:00,2026-03-07 21:22:00,24,0.18
+179,7,8,Controls,B-01 Conveyor: position sensor missed a cycle,High,Resolved,2026-03-07 11:24:00,2026-03-07 13:56:00,2026-03-08 02:05:00,12,4.46
+180,12,2,Mechanical,B-06 Robot: belt tension below specification,High,Resolved,2026-03-07 16:06:00,2026-03-07 16:48:00,2026-03-07 19:31:00,12,1.44
+181,7,3,Mechanical,B-01 Conveyor: belt tension below specification,Medium,Resolved,2026-03-07 17:44:00,2026-03-07 22:26:00,2026-03-08 09:56:00,24,3.32
+182,14,3,Mechanical,C-02 Conveyor: belt tension below specification,High,Resolved,2026-03-07 21:11:00,2026-03-08 10:06:00,2026-03-08 20:37:00,12,15.47
+183,2,11,Pneumatics,A-02 Feeder: cylinder returned slowly,Medium,Resolved,2026-03-07 21:51:00,2026-03-07 23:10:00,2026-03-09 01:09:00,24,6.82
+184,5,8,Controls,A-05 Tester: feedback signal drifted from its setpoint,High,Resolved,2026-03-08 12:02:00,2026-03-09 06:09:00,2026-03-09 08:20:00,12,11.73
+185,1,4,Electrical,A-01 Press: motor overload relay tripped,Medium,Resolved,2026-03-08 14:32:00,2026-03-08 21:42:00,2026-03-09 16:50:00,24,4.27
+186,18,9,Controls,C-06 Conveyor: feedback signal drifted from its setpoint,Low,Resolved,2026-03-08 21:33:00,2026-03-09 02:39:00,2026-03-09 13:48:00,48,0.18
+187,13,11,Pneumatics,C-01 Sealer: air pressure dropped during cycling,Medium,Resolved,2026-03-09 06:08:00,2026-03-09 14:12:00,2026-03-10 18:34:00,24,12.28
+188,7,2,Mechanical,B-01 Conveyor: bearing noise during operation,Medium,Resolved,2026-03-09 09:02:00,2026-03-10 06:02:00,2026-03-10 13:54:00,24,6.63
+189,1,4,Electrical,A-01 Press: starter contactor failed to engage,High,Resolved,2026-03-09 20:42:00,2026-03-09 22:06:00,2026-03-10 02:12:00,12,1.70
+190,8,3,Mechanical,B-02 Robot: bearing noise during operation,Medium,Resolved,2026-03-10 10:48:00,2026-03-11 22:30:00,2026-03-12 22:16:00,24,19.06
+191,4,5,Electrical,A-04 Robot: starter contactor failed to engage,Critical,Resolved,2026-03-10 17:52:00,2026-03-10 18:01:00,2026-03-10 21:12:00,4,2.58
+192,21,8,Controls,D-03 Robot: feedback signal drifted from its setpoint,Medium,Resolved,2026-03-11 05:32:00,2026-03-11 07:36:00,2026-03-11 18:16:00,24,4.16
+193,2,8,Controls,A-02 Feeder: position sensor missed a cycle,High,Resolved,2026-03-11 07:14:00,2026-03-11 09:10:00,2026-03-11 16:18:00,12,2.71
+194,5,6,Electrical,A-05 Tester: motor overload relay tripped,Medium,Resolved,2026-03-11 08:47:00,2026-03-11 10:37:00,2026-03-12 01:35:00,24,1.71
+195,16,4,Electrical,C-04 Tester: starter contactor failed to engage,Medium,Resolved,2026-03-11 10:47:00,2026-03-11 13:41:00,2026-03-12 17:14:00,24,0.00
+196,15,2,Mechanical,C-03 Feeder: belt tension below specification,Medium,Resolved,2026-03-13 08:03:00,2026-03-13 11:37:00,2026-03-14 11:28:00,24,0.00
+197,7,7,Controls,B-01 Conveyor: position sensor missed a cycle,High,Resolved,2026-03-13 08:24:00,2026-03-13 09:08:00,2026-03-13 21:21:00,12,8.05
+198,12,2,Mechanical,B-06 Robot: bearing noise during operation,High,Resolved,2026-03-13 23:50:00,2026-03-14 02:07:00,2026-03-14 09:52:00,12,2.39
+199,19,6,Electrical,D-01 Tester: intermittent power at the drive,Medium,Resolved,2026-03-14 08:26:00,2026-03-14 11:50:00,2026-03-14 22:31:00,24,4.84
+200,9,9,Controls,B-03 Tester: drive reported a communication fault,Low,Resolved,2026-03-14 10:57:00,2026-03-14 17:48:00,2026-03-15 08:46:00,48,0.00
+201,5,9,Process Quality,A-05 Tester: output drifted outside process tolerance,Medium,Resolved,2026-03-14 13:45:00,2026-03-14 17:23:00,2026-03-15 17:28:00,24,0.00
+202,7,8,Controls,B-01 Conveyor: drive reported a communication fault,Medium,Resolved,2026-03-14 13:59:00,2026-03-14 15:56:00,2026-03-15 22:44:00,24,0.00
+203,10,1,Mechanical,B-04 Feeder: bearing noise during operation,Critical,Resolved,2026-03-14 18:57:00,2026-03-15 01:28:00,2026-03-15 05:42:00,4,9.83
+204,13,8,Process Quality,C-01 Sealer: output drifted outside process tolerance,Low,Resolved,2026-03-15 07:31:00,2026-03-15 13:53:00,2026-03-15 23:03:00,48,1.32
+205,4,8,Controls,A-04 Robot: position sensor missed a cycle,Medium,Resolved,2026-03-15 17:54:00,2026-03-15 18:41:00,2026-03-16 02:33:00,24,0.78
+206,9,8,Process Quality,B-03 Tester: verification check flagged inconsistent output,High,Resolved,2026-03-16 11:35:00,2026-03-16 13:33:00,2026-03-17 00:02:00,12,7.33
+207,23,10,Pneumatics,D-05 Feeder: cylinder returned slowly,High,Resolved,2026-03-16 14:27:00,2026-03-16 15:34:00,2026-03-16 19:48:00,12,1.79
+208,12,9,Controls,B-06 Robot: drive reported a communication fault,Medium,Resolved,2026-03-16 17:47:00,2026-03-16 19:18:00,2026-03-17 21:15:00,24,8.76
+209,9,7,Controls,B-03 Tester: position sensor missed a cycle,Low,Resolved,2026-03-17 16:09:00,2026-03-17 21:06:00,2026-03-19 15:26:00,48,4.02
+210,11,1,Mechanical,B-05 Conveyor: drive vibration above normal,Low,Resolved,2026-03-17 19:05:00,2026-03-17 21:49:00,2026-03-19 07:37:00,48,0.59
+211,5,9,Process Quality,A-05 Tester: output drifted outside process tolerance,High,Resolved,2026-03-18 06:08:00,2026-03-18 08:00:00,2026-03-18 12:47:00,12,3.81
+212,22,9,Controls,D-04 Conveyor: position sensor missed a cycle,Medium,Resolved,2026-03-18 10:18:00,2026-03-18 13:32:00,2026-03-19 08:19:00,24,1.33
+213,20,10,Pneumatics,D-02 Press: air leak detected at the valve manifold,Medium,Resolved,2026-03-18 11:02:00,2026-03-18 12:55:00,2026-03-18 23:45:00,24,1.51
+214,19,9,Process Quality,D-01 Tester: output drifted outside process tolerance,Medium,Resolved,2026-03-19 07:23:00,2026-03-19 08:30:00,2026-03-19 22:11:00,24,0.82
+215,14,1,Mechanical,C-02 Conveyor: drive vibration above normal,Low,Resolved,2026-03-19 13:11:00,2026-03-19 20:40:00,2026-03-21 02:33:00,48,3.39
+216,16,5,Electrical,C-04 Tester: starter contactor failed to engage,Low,Resolved,2026-03-19 13:35:00,2026-03-19 19:10:00,2026-03-21 13:06:00,48,0.60
+217,17,9,Process Quality,C-05 Sealer: verification check flagged inconsistent output,Medium,Resolved,2026-03-19 17:52:00,2026-03-19 22:10:00,2026-03-20 11:33:00,24,4.87
+218,15,3,Mechanical,C-03 Feeder: bearing noise during operation,Medium,Resolved,2026-03-22 09:17:00,2026-03-22 21:58:00,2026-03-23 16:11:00,24,0.00
+219,19,9,Controls,D-01 Tester: position sensor missed a cycle,High,Resolved,2026-03-22 10:21:00,2026-03-22 12:47:00,2026-03-22 18:45:00,12,2.13
+220,7,3,Mechanical,B-01 Conveyor: belt tension below specification,Medium,Resolved,2026-03-22 13:00:00,2026-03-22 17:23:00,2026-03-22 23:05:00,24,3.47
+221,7,3,Mechanical,B-01 Conveyor: drive vibration above normal,Medium,Resolved,2026-03-22 16:21:00,2026-03-22 22:16:00,2026-03-23 04:45:00,24,3.39
+222,9,5,Electrical,B-03 Tester: starter contactor failed to engage,Low,Resolved,2026-03-22 19:44:00,2026-03-23 03:21:00,2026-03-23 22:11:00,48,0.00
+223,19,5,Electrical,D-01 Tester: starter contactor failed to engage,High,Resolved,2026-03-22 22:06:00,2026-03-22 23:42:00,2026-03-23 08:36:00,12,6.27
+224,18,2,Mechanical,C-06 Conveyor: bearing noise during operation,Medium,Resolved,2026-03-23 06:34:00,2026-03-23 16:06:00,2026-03-24 02:54:00,24,4.53
+225,13,10,Pneumatics,C-01 Sealer: air pressure dropped during cycling,Low,Resolved,2026-03-23 07:49:00,2026-03-23 14:21:00,2026-03-25 05:13:00,48,2.33
+226,1,10,Pneumatics,A-01 Press: air leak detected at the valve manifold,Medium,Resolved,2026-03-24 13:45:00,2026-03-24 17:45:00,2026-03-25 02:46:00,24,0.00
+227,19,8,Process Quality,D-01 Tester: verification check flagged inconsistent output,Medium,Resolved,2026-03-24 14:04:00,2026-03-25 13:06:00,2026-03-25 21:01:00,24,8.96
+228,7,7,Controls,B-01 Conveyor: position sensor missed a cycle,High,Resolved,2026-03-25 07:44:00,2026-03-25 10:34:00,2026-03-26 01:46:00,12,6.94
+229,7,4,Electrical,B-01 Conveyor: intermittent power at the drive,Low,Resolved,2026-03-25 11:03:00,2026-03-25 16:37:00,2026-03-27 06:41:00,48,4.26
+230,11,3,Mechanical,B-05 Conveyor: belt tension below specification,Medium,Resolved,2026-03-25 20:01:00,2026-03-26 01:10:00,2026-03-26 07:59:00,24,1.99
+231,20,3,Mechanical,D-02 Press: bearing noise during operation,Low,Resolved,2026-03-26 10:46:00,2026-03-27 05:02:00,2026-03-27 23:03:00,48,1.76
+232,3,4,Electrical,A-03 Conveyor: starter contactor failed to engage,Medium,Resolved,2026-03-26 19:47:00,2026-03-28 08:03:00,2026-03-29 02:14:00,24,16.44
+233,14,3,Mechanical,C-02 Conveyor: bearing noise during operation,Medium,Resolved,2026-03-27 07:05:00,2026-03-27 11:07:00,2026-03-28 14:12:00,24,9.68
+234,5,8,Process Quality,A-05 Tester: verification check flagged inconsistent output,Medium,Resolved,2026-03-27 10:41:00,2026-03-27 13:10:00,2026-03-27 17:47:00,24,1.29
+235,11,8,Controls,B-05 Conveyor: position sensor missed a cycle,Low,Resolved,2026-03-27 14:01:00,2026-03-30 03:11:00,2026-03-31 06:30:00,48,0.00
+236,4,9,Controls,A-04 Robot: drive reported a communication fault,Low,Resolved,2026-03-27 20:11:00,2026-03-28 00:22:00,2026-03-30 17:23:00,48,1.50
+237,12,5,Electrical,B-06 Robot: starter contactor failed to engage,Medium,Resolved,2026-03-28 11:18:00,2026-03-28 12:49:00,2026-03-28 18:27:00,24,2.22
+238,9,8,Process Quality,B-03 Tester: output drifted outside process tolerance,Medium,Resolved,2026-03-28 14:47:00,2026-03-29 18:04:00,2026-03-30 11:24:00,24,0.00
+239,23,2,Mechanical,D-05 Feeder: bearing noise during operation,High,Resolved,2026-03-28 23:49:00,2026-03-29 01:38:00,2026-03-29 07:09:00,12,2.10
+240,3,7,Controls,A-03 Conveyor: feedback signal drifted from its setpoint,High,Resolved,2026-03-29 13:25:00,2026-03-29 13:50:00,2026-03-29 22:12:00,12,5.85
+241,14,3,Mechanical,C-02 Conveyor: belt tension below specification,Medium,Resolved,2026-03-29 17:29:00,2026-03-30 00:27:00,2026-03-30 05:00:00,24,3.79
+242,2,11,Pneumatics,A-02 Feeder: cylinder returned slowly,Medium,Resolved,2026-03-30 13:58:00,2026-03-30 19:51:00,2026-03-31 19:29:00,24,0.00
+243,11,3,Mechanical,B-05 Conveyor: bearing noise during operation,Medium,Resolved,2026-03-30 16:32:00,2026-03-30 19:19:00,2026-03-31 15:32:00,24,0.00
+244,7,3,Mechanical,B-01 Conveyor: drive vibration above normal,Low,Resolved,2026-03-30 20:05:00,2026-03-31 03:18:00,2026-04-02 10:57:00,48,3.55
+245,12,9,Controls,B-06 Robot: drive reported a communication fault,Medium,Resolved,2026-03-31 14:00:00,2026-04-01 03:58:00,2026-04-01 23:52:00,24,3.55
+246,24,10,Pneumatics,D-06 Sealer: cylinder returned slowly,High,Resolved,2026-04-01 06:26:00,2026-04-02 00:29:00,2026-04-02 11:31:00,12,16.89
+247,14,2,Mechanical,C-02 Conveyor: belt tension below specification,High,Resolved,2026-04-01 06:52:00,2026-04-01 08:26:00,2026-04-01 18:56:00,12,2.57
+248,7,1,Mechanical,B-01 Conveyor: belt tension below specification,Medium,Resolved,2026-04-01 13:42:00,2026-04-01 15:41:00,2026-04-02 01:08:00,24,2.41
+249,15,3,Mechanical,C-03 Feeder: drive vibration above normal,Medium,Resolved,2026-04-01 14:56:00,2026-04-01 15:57:00,2026-04-01 23:36:00,24,0.22
+250,13,10,Pneumatics,C-01 Sealer: air leak detected at the valve manifold,Medium,Resolved,2026-04-02 06:21:00,2026-04-02 22:25:00,2026-04-03 07:39:00,24,6.11
+251,2,2,Mechanical,A-02 Feeder: bearing noise during operation,Medium,Resolved,2026-04-02 09:27:00,2026-04-02 11:30:00,2026-04-03 08:52:00,24,2.80
+252,14,2,Mechanical,C-02 Conveyor: bearing noise during operation,Medium,Resolved,2026-04-02 10:22:00,2026-04-02 11:04:00,2026-04-03 08:53:00,24,4.02
+253,7,3,Mechanical,B-01 Conveyor: bearing noise during operation,High,Resolved,2026-04-02 15:19:00,2026-04-02 16:18:00,2026-04-03 02:05:00,12,4.72
+254,14,7,Controls,C-02 Conveyor: position sensor missed a cycle,Medium,Resolved,2026-04-02 16:14:00,2026-04-02 23:24:00,2026-04-03 04:20:00,24,0.00
+255,19,7,Process Quality,D-01 Tester: verification check flagged inconsistent output,High,Resolved,2026-04-02 17:50:00,2026-04-02 19:18:00,2026-04-03 01:37:00,12,2.16
+256,4,4,Electrical,A-04 Robot: motor overload relay tripped,Low,Resolved,2026-04-02 18:22:00,2026-04-02 22:36:00,2026-04-03 16:59:00,48,1.52
+257,1,10,Pneumatics,A-01 Press: air leak detected at the valve manifold,High,Resolved,2026-04-03 01:44:00,2026-04-03 04:56:00,2026-04-03 13:33:00,12,6.88
+258,10,8,Controls,B-04 Feeder: drive reported a communication fault,Medium,Resolved,2026-04-03 09:25:00,2026-04-04 21:14:00,2026-04-05 19:27:00,24,15.23
+259,6,6,Electrical,A-06 Press: intermittent power at the drive,Low,Resolved,2026-04-03 10:13:00,2026-04-03 21:30:00,2026-04-04 15:28:00,48,0.00
+260,22,5,Electrical,D-04 Conveyor: starter contactor failed to engage,Medium,Resolved,2026-04-03 10:36:00,2026-04-04 18:31:00,2026-04-05 00:51:00,24,7.46
+261,20,11,Pneumatics,D-02 Press: cylinder returned slowly,Low,Resolved,2026-04-04 08:29:00,2026-04-04 11:08:00,2026-04-06 00:36:00,48,0.00
+262,14,2,Mechanical,C-02 Conveyor: drive vibration above normal,Medium,Resolved,2026-04-05 07:21:00,2026-04-05 12:05:00,2026-04-06 10:05:00,24,4.67
+263,17,10,Pneumatics,C-05 Sealer: air leak detected at the valve manifold,Low,Resolved,2026-04-05 20:26:00,2026-04-07 15:36:00,2026-04-08 05:46:00,48,4.10
+264,8,8,Controls,B-02 Robot: drive reported a communication fault,Low,Resolved,2026-04-06 06:03:00,2026-04-06 09:30:00,2026-04-07 05:57:00,48,2.79
+265,19,8,Controls,D-01 Tester: position sensor missed a cycle,Low,Resolved,2026-04-06 08:40:00,2026-04-07 00:19:00,2026-04-09 18:17:00,48,0.63
+266,3,2,Mechanical,A-03 Conveyor: bearing noise during operation,Medium,Resolved,2026-04-06 16:40:00,2026-04-06 21:05:00,2026-04-08 04:05:00,24,0.00
+267,4,9,Controls,A-04 Robot: feedback signal drifted from its setpoint,High,Resolved,2026-04-07 08:28:00,2026-04-07 14:22:00,2026-04-07 21:15:00,12,8.47
+268,3,1,Mechanical,A-03 Conveyor: drive vibration above normal,Medium,Resolved,2026-04-07 10:12:00,2026-04-07 17:22:00,2026-04-08 08:49:00,24,3.11
+269,12,4,Electrical,B-06 Robot: motor overload relay tripped,High,Resolved,2026-04-07 11:20:00,2026-04-07 15:15:00,2026-04-08 01:36:00,12,9.09
+270,7,1,Mechanical,B-01 Conveyor: drive vibration above normal,Critical,Resolved,2026-04-07 14:01:00,2026-04-07 14:26:00,2026-04-07 18:44:00,4,3.12
+271,18,8,Controls,C-06 Conveyor: drive reported a communication fault,Medium,Resolved,2026-04-08 06:00:00,2026-04-08 06:31:00,2026-04-08 23:50:00,24,4.66
+272,9,9,Process Quality,B-03 Tester: recipe change required recalibration,Critical,Resolved,2026-04-08 07:02:00,2026-04-08 07:29:00,2026-04-08 10:18:00,4,1.99
+273,2,10,Pneumatics,A-02 Feeder: air pressure dropped during cycling,Medium,Resolved,2026-04-09 08:11:00,2026-04-09 09:55:00,2026-04-10 06:38:00,24,2.14
+274,15,9,Controls,C-03 Feeder: drive reported a communication fault,Critical,Resolved,2026-04-09 09:16:00,2026-04-09 10:16:00,2026-04-09 13:07:00,4,2.67
+275,19,8,Process Quality,D-01 Tester: recipe change required recalibration,Low,Resolved,2026-04-09 10:08:00,2026-04-09 17:12:00,2026-04-10 14:29:00,48,0.63
+276,15,11,Pneumatics,C-03 Feeder: air pressure dropped during cycling,Medium,Resolved,2026-04-09 18:58:00,2026-04-09 21:46:00,2026-04-10 03:32:00,24,0.78
+277,7,8,Controls,B-01 Conveyor: position sensor missed a cycle,Medium,Resolved,2026-04-10 12:51:00,2026-04-10 16:25:00,2026-04-11 11:36:00,24,3.77
+278,1,1,Mechanical,A-01 Press: bearing noise during operation,Medium,Resolved,2026-04-11 14:43:00,2026-04-11 15:20:00,2026-04-12 08:33:00,24,0.00
+279,14,1,Mechanical,C-02 Conveyor: drive vibration above normal,Medium,Resolved,2026-04-11 15:58:00,2026-04-12 20:11:00,2026-04-13 14:04:00,24,14.34
+280,10,2,Mechanical,B-04 Feeder: belt tension below specification,Low,Resolved,2026-04-11 16:50:00,2026-04-12 01:30:00,2026-04-12 16:33:00,48,0.36
+281,13,10,Pneumatics,C-01 Sealer: cylinder returned slowly,Medium,Resolved,2026-04-11 19:48:00,2026-04-11 23:41:00,2026-04-12 14:17:00,24,0.00
+282,1,1,Mechanical,A-01 Press: drive vibration above normal,Critical,Resolved,2026-04-12 11:58:00,2026-04-12 13:07:00,2026-04-12 15:39:00,4,3.54
+283,20,12,Pneumatics,D-02 Press: cylinder returned slowly,Medium,Resolved,2026-04-12 16:47:00,2026-04-12 21:09:00,2026-04-13 02:38:00,24,1.77
+284,14,1,Mechanical,C-02 Conveyor: belt tension below specification,Low,Resolved,2026-04-12 18:13:00,2026-04-12 23:07:00,2026-04-13 06:52:00,48,0.00
+285,8,5,Electrical,B-02 Robot: motor overload relay tripped,Medium,Resolved,2026-04-13 08:30:00,2026-04-13 14:29:00,2026-04-14 07:47:00,24,6.36
+286,19,7,Process Quality,D-01 Tester: verification check flagged inconsistent output,High,Resolved,2026-04-13 09:55:00,2026-04-13 10:51:00,2026-04-13 23:25:00,12,4.59
+287,19,7,Process Quality,D-01 Tester: recipe change required recalibration,High,Resolved,2026-04-13 14:07:00,2026-04-13 22:58:00,2026-04-14 01:59:00,12,6.05
+288,19,9,Process Quality,D-01 Tester: output drifted outside process tolerance,Low,Resolved,2026-04-13 20:19:00,2026-04-14 02:40:00,2026-04-15 12:31:00,48,0.81
+289,14,1,Mechanical,C-02 Conveyor: drive vibration above normal,High,Resolved,2026-04-14 13:44:00,2026-04-14 16:40:00,2026-04-15 06:58:00,12,10.69
+290,13,1,Mechanical,C-01 Sealer: drive vibration above normal,Low,Resolved,2026-04-14 15:14:00,2026-04-14 21:15:00,2026-04-15 22:18:00,48,3.46
+291,14,5,Electrical,C-02 Conveyor: intermittent power at the drive,Medium,Resolved,2026-04-15 07:03:00,2026-04-15 14:55:00,2026-04-16 02:00:00,24,0.92
+292,15,1,Mechanical,C-03 Feeder: belt tension below specification,Medium,Resolved,2026-04-15 08:00:00,2026-04-15 09:40:00,2026-04-16 03:34:00,24,1.62
+293,10,9,Controls,B-04 Feeder: feedback signal drifted from its setpoint,Medium,Resolved,2026-04-17 06:37:00,2026-04-17 08:43:00,2026-04-18 01:15:00,24,6.24
+294,24,2,Mechanical,D-06 Sealer: belt tension below specification,Low,Resolved,2026-04-17 06:39:00,2026-04-17 16:44:00,2026-04-19 02:42:00,48,0.00
+295,8,9,Controls,B-02 Robot: position sensor missed a cycle,Medium,Resolved,2026-04-17 10:42:00,2026-04-17 18:20:00,2026-04-18 10:03:00,24,2.97
+296,4,5,Electrical,A-04 Robot: motor overload relay tripped,High,Resolved,2026-04-17 11:38:00,2026-04-17 15:42:00,2026-04-17 21:44:00,12,6.31
+297,14,8,Controls,C-02 Conveyor: drive reported a communication fault,Medium,Resolved,2026-04-18 17:04:00,2026-04-18 23:26:00,2026-04-20 04:43:00,24,10.88
+298,16,9,Process Quality,C-04 Tester: output drifted outside process tolerance,Critical,Resolved,2026-04-19 07:26:00,2026-04-19 11:37:00,2026-04-19 13:57:00,4,5.89
+299,16,7,Controls,C-04 Tester: position sensor missed a cycle,Critical,Resolved,2026-04-19 10:06:00,2026-04-19 14:55:00,2026-04-19 17:29:00,4,5.55
+300,7,9,Controls,B-01 Conveyor: drive reported a communication fault,Medium,Resolved,2026-04-19 14:09:00,2026-04-19 16:27:00,2026-04-20 01:31:00,24,0.98
+301,13,12,Pneumatics,C-01 Sealer: air leak detected at the valve manifold,High,Resolved,2026-04-19 16:56:00,2026-04-19 17:18:00,2026-04-19 23:48:00,12,2.57
+302,12,6,Electrical,B-06 Robot: intermittent power at the drive,Low,Resolved,2026-04-20 14:12:00,2026-04-20 20:46:00,2026-04-22 04:47:00,48,0.97
+303,7,9,Controls,B-01 Conveyor: position sensor missed a cycle,Medium,Resolved,2026-04-20 18:18:00,2026-04-21 03:46:00,2026-04-22 06:41:00,24,7.26
+304,10,3,Mechanical,B-04 Feeder: drive vibration above normal,Medium,Resolved,2026-04-21 07:20:00,2026-04-22 10:34:00,2026-04-23 02:35:00,24,1.08
+305,24,11,Pneumatics,D-06 Sealer: cylinder returned slowly,Medium,Resolved,2026-04-21 07:46:00,2026-04-21 23:13:00,2026-04-22 06:34:00,24,7.44
+306,14,7,Controls,C-02 Conveyor: feedback signal drifted from its setpoint,Medium,Resolved,2026-04-21 09:52:00,2026-04-21 12:11:00,2026-04-21 21:10:00,24,0.45
+307,18,5,Electrical,C-06 Conveyor: starter contactor failed to engage,High,Resolved,2026-04-21 20:48:00,2026-04-22 10:38:00,2026-04-22 20:48:00,12,4.87
+308,15,1,Mechanical,C-03 Feeder: belt tension below specification,High,Resolved,2026-04-22 08:05:00,2026-04-22 09:33:00,2026-04-22 22:48:00,12,9.78
+309,10,3,Mechanical,B-04 Feeder: drive vibration above normal,Medium,Resolved,2026-04-22 18:55:00,2026-04-24 04:26:00,2026-04-24 10:07:00,24,7.03
+310,1,2,Mechanical,A-01 Press: drive vibration above normal,Low,Resolved,2026-04-23 12:33:00,2026-04-23 15:30:00,2026-04-24 04:59:00,48,0.00
+311,17,11,Pneumatics,C-05 Sealer: air leak detected at the valve manifold,Medium,Resolved,2026-04-23 15:43:00,2026-04-23 17:05:00,2026-04-24 06:53:00,24,3.98
+312,2,2,Mechanical,A-02 Feeder: drive vibration above normal,High,Resolved,2026-04-23 19:32:00,2026-04-23 22:51:00,2026-04-24 07:26:00,12,5.03
+313,8,5,Electrical,B-02 Robot: motor overload relay tripped,High,Resolved,2026-04-24 15:02:00,2026-04-25 10:03:00,2026-04-25 23:41:00,12,10.65
+314,18,2,Mechanical,C-06 Conveyor: drive vibration above normal,Medium,Resolved,2026-04-24 18:52:00,2026-04-25 01:21:00,2026-04-25 11:59:00,24,0.00
+315,13,10,Pneumatics,C-01 Sealer: cylinder returned slowly,Medium,Resolved,2026-04-25 15:16:00,2026-04-25 17:40:00,2026-04-26 03:57:00,24,1.82
+316,13,12,Pneumatics,C-01 Sealer: air pressure dropped during cycling,Low,Resolved,2026-04-25 19:22:00,2026-04-26 03:02:00,2026-04-27 17:45:00,48,3.17
+317,7,2,Mechanical,B-01 Conveyor: belt tension below specification,Medium,Resolved,2026-04-25 19:29:00,2026-04-26 01:38:00,2026-04-26 10:12:00,24,0.00
+318,24,10,Pneumatics,D-06 Sealer: air leak detected at the valve manifold,Low,Resolved,2026-04-26 18:59:00,2026-04-27 00:30:00,2026-04-28 22:02:00,48,0.52
+319,22,2,Mechanical,D-04 Conveyor: drive vibration above normal,High,Resolved,2026-04-27 06:57:00,2026-04-27 10:31:00,2026-04-28 00:33:00,12,12.15
+320,7,7,Controls,B-01 Conveyor: position sensor missed a cycle,Medium,Resolved,2026-04-27 10:32:00,2026-04-27 16:05:00,2026-04-28 08:28:00,24,1.32
+321,19,9,Controls,D-01 Tester: drive reported a communication fault,Medium,Resolved,2026-04-27 16:07:00,2026-04-27 22:19:00,2026-04-28 15:07:00,24,6.51
+322,12,6,Electrical,B-06 Robot: starter contactor failed to engage,Medium,Resolved,2026-04-27 21:35:00,2026-04-28 01:26:00,2026-04-28 18:02:00,24,1.47
+323,3,6,Electrical,A-03 Conveyor: intermittent power at the drive,Medium,Resolved,2026-04-28 08:12:00,2026-04-28 10:17:00,2026-04-29 11:49:00,24,6.18
+324,12,7,Controls,B-06 Robot: drive reported a communication fault,High,Resolved,2026-04-28 10:55:00,2026-04-28 11:33:00,2026-04-28 20:01:00,12,6.29
+325,17,9,Process Quality,C-05 Sealer: recipe change required recalibration,Medium,Resolved,2026-04-28 12:08:00,2026-04-28 17:29:00,2026-04-29 00:53:00,24,3.01
+326,4,7,Controls,A-04 Robot: drive reported a communication fault,Medium,Resolved,2026-04-29 08:06:00,2026-04-29 08:53:00,2026-04-29 21:50:00,24,3.10
+327,13,10,Pneumatics,C-01 Sealer: air leak detected at the valve manifold,Medium,Resolved,2026-04-29 16:28:00,2026-04-29 21:46:00,2026-04-30 10:35:00,24,0.00
+328,5,9,Process Quality,A-05 Tester: output drifted outside process tolerance,Medium,Resolved,2026-04-30 07:36:00,2026-04-30 14:39:00,2026-05-01 17:56:00,24,0.00
+329,8,4,Electrical,B-02 Robot: starter contactor failed to engage,Low,Resolved,2026-04-30 14:10:00,2026-05-01 22:40:00,2026-05-04 02:55:00,48,4.56
+330,14,3,Mechanical,C-02 Conveyor: bearing noise during operation,High,Resolved,2026-05-01 06:41:00,2026-05-01 10:11:00,2026-05-01 17:09:00,12,4.02
+331,12,2,Mechanical,B-06 Robot: belt tension below specification,High,Resolved,2026-05-02 08:21:00,2026-05-02 09:31:00,2026-05-02 21:22:00,12,6.57
+332,7,5,Electrical,B-01 Conveyor: intermittent power at the drive,High,Resolved,2026-05-02 14:30:00,2026-05-02 18:12:00,2026-05-03 03:47:00,12,7.13
+333,8,9,Controls,B-02 Robot: position sensor missed a cycle,Low,Resolved,2026-05-02 15:11:00,2026-05-05 20:21:00,2026-05-06 11:21:00,48,8.82
+334,21,7,Controls,D-03 Robot: position sensor missed a cycle,Low,Resolved,2026-05-02 15:16:00,2026-05-05 09:38:00,2026-05-08 01:57:00,48,2.68
+335,13,12,Pneumatics,C-01 Sealer: cylinder returned slowly,High,Resolved,2026-05-02 20:37:00,2026-05-02 23:44:00,2026-05-03 05:23:00,12,3.76
+336,23,12,Pneumatics,D-05 Feeder: cylinder returned slowly,Medium,Resolved,2026-05-03 06:05:00,2026-05-03 09:40:00,2026-05-03 20:35:00,24,2.17
+337,23,9,Controls,D-05 Feeder: position sensor missed a cycle,Low,Resolved,2026-05-03 08:35:00,2026-05-04 18:35:00,2026-05-05 13:50:00,48,0.68
+338,3,1,Mechanical,A-03 Conveyor: bearing noise during operation,Medium,Resolved,2026-05-03 20:48:00,2026-05-04 00:21:00,2026-05-04 21:04:00,24,0.31
+339,23,3,Mechanical,D-05 Feeder: belt tension below specification,Medium,Resolved,2026-05-04 07:00:00,2026-05-04 09:58:00,2026-05-05 06:50:00,24,1.13
+340,22,9,Controls,D-04 Conveyor: position sensor missed a cycle,High,Resolved,2026-05-04 07:53:00,2026-05-04 11:17:00,2026-05-04 23:20:00,12,7.99
+341,16,7,Controls,C-04 Tester: drive reported a communication fault,High,Resolved,2026-05-04 09:49:00,2026-05-04 12:36:00,2026-05-04 19:19:00,12,5.01
+342,22,4,Electrical,D-04 Conveyor: motor overload relay tripped,Medium,Resolved,2026-05-04 11:14:00,2026-05-06 02:19:00,2026-05-06 11:34:00,24,12.12
+343,17,12,Pneumatics,C-05 Sealer: air leak detected at the valve manifold,Low,Resolved,2026-05-04 14:40:00,2026-05-04 17:19:00,2026-05-06 04:53:00,48,0.00
+344,9,8,Process Quality,B-03 Tester: recipe change required recalibration,Medium,Resolved,2026-05-05 07:18:00,2026-05-05 12:01:00,2026-05-05 19:15:00,24,2.85
+345,8,2,Mechanical,B-02 Robot: belt tension below specification,Medium,Resolved,2026-05-05 10:10:00,2026-05-05 12:51:00,2026-05-06 19:50:00,24,4.22
+346,10,8,Controls,B-04 Feeder: drive reported a communication fault,High,Resolved,2026-05-05 13:27:00,2026-05-05 17:58:00,2026-05-06 04:45:00,12,6.66
+347,7,1,Mechanical,B-01 Conveyor: drive vibration above normal,High,Resolved,2026-05-06 06:49:00,2026-05-06 07:36:00,2026-05-06 23:02:00,12,5.78
+348,14,3,Mechanical,C-02 Conveyor: belt tension below specification,Medium,Resolved,2026-05-06 09:41:00,2026-05-07 16:54:00,2026-05-08 08:11:00,24,14.77
+349,19,7,Process Quality,D-01 Tester: recipe change required recalibration,Low,Resolved,2026-05-06 10:48:00,2026-05-06 20:44:00,2026-05-08 13:01:00,48,4.42
+350,12,6,Electrical,B-06 Robot: motor overload relay tripped,Medium,Resolved,2026-05-06 10:59:00,2026-05-06 12:54:00,2026-05-07 00:05:00,24,4.27
+351,13,3,Mechanical,C-01 Sealer: drive vibration above normal,High,Resolved,2026-05-06 15:23:00,2026-05-06 17:13:00,2026-05-06 20:15:00,12,1.28
+352,12,7,Controls,B-06 Robot: position sensor missed a cycle,Medium,Resolved,2026-05-07 01:47:00,2026-05-07 06:08:00,2026-05-08 05:26:00,24,8.03
+353,13,12,Pneumatics,C-01 Sealer: air pressure dropped during cycling,Low,Resolved,2026-05-07 09:07:00,2026-05-07 15:06:00,2026-05-09 00:29:00,48,0.37
+354,19,7,Process Quality,D-01 Tester: verification check flagged inconsistent output,Medium,Resolved,2026-05-07 10:36:00,2026-05-07 12:21:00,2026-05-08 10:52:00,24,2.79
+355,20,1,Mechanical,D-02 Press: bearing noise during operation,Critical,Resolved,2026-05-07 11:40:00,2026-05-07 13:18:00,2026-05-07 14:34:00,4,2.42
+356,23,2,Mechanical,D-05 Feeder: drive vibration above normal,Medium,Resolved,2026-05-07 20:20:00,2026-05-08 01:43:00,2026-05-08 18:51:00,24,0.00
+357,4,4,Electrical,A-04 Robot: intermittent power at the drive,Critical,Resolved,2026-05-08 03:12:00,2026-05-08 04:45:00,2026-05-08 05:34:00,4,2.12
+358,13,11,Pneumatics,C-01 Sealer: cylinder returned slowly,Medium,Resolved,2026-05-08 06:00:00,2026-05-08 07:43:00,2026-05-08 21:21:00,24,0.00
+359,7,8,Controls,B-01 Conveyor: position sensor missed a cycle,High,Resolved,2026-05-08 07:43:00,2026-05-08 09:06:00,2026-05-08 19:34:00,12,5.69
+360,22,1,Mechanical,D-04 Conveyor: belt tension below specification,Low,Resolved,2026-05-08 11:57:00,2026-05-08 14:07:00,2026-05-09 16:42:00,48,2.39
+361,20,12,Pneumatics,D-02 Press: cylinder returned slowly,Low,Resolved,2026-05-09 08:09:00,2026-05-09 21:02:00,2026-05-11 07:09:00,48,1.88
+362,4,3,Mechanical,A-04 Robot: bearing noise during operation,Low,Resolved,2026-05-09 15:02:00,2026-05-09 18:16:00,2026-05-12 14:49:00,48,8.00
+363,13,2,Mechanical,C-01 Sealer: bearing noise during operation,Medium,Resolved,2026-05-09 18:42:00,2026-05-10 00:37:00,2026-05-10 08:54:00,24,3.18
+364,17,10,Pneumatics,C-05 Sealer: air leak detected at the valve manifold,Medium,Resolved,2026-05-09 19:47:00,2026-05-10 00:21:00,2026-05-10 14:31:00,24,1.50
+365,11,1,Mechanical,B-05 Conveyor: bearing noise during operation,Medium,Resolved,2026-05-09 21:11:00,2026-05-09 22:39:00,2026-05-10 07:37:00,24,1.82
+366,5,8,Controls,A-05 Tester: drive reported a communication fault,High,Resolved,2026-05-10 14:31:00,2026-05-10 21:30:00,2026-05-11 01:23:00,12,2.88
+367,12,7,Controls,B-06 Robot: feedback signal drifted from its setpoint,Medium,Resolved,2026-05-10 14:56:00,2026-05-10 16:42:00,2026-05-11 01:52:00,24,1.59
+368,16,9,Process Quality,C-04 Tester: recipe change required recalibration,Medium,Resolved,2026-05-10 14:59:00,2026-05-10 16:39:00,2026-05-11 02:04:00,24,0.00
+369,7,7,Controls,B-01 Conveyor: position sensor missed a cycle,Critical,Resolved,2026-05-10 20:21:00,2026-05-10 23:41:00,2026-05-11 02:16:00,4,3.44
+370,12,4,Electrical,B-06 Robot: starter contactor failed to engage,High,Resolved,2026-05-11 09:32:00,2026-05-12 01:03:00,2026-05-12 08:21:00,12,15.39
+371,13,11,Pneumatics,C-01 Sealer: air leak detected at the valve manifold,High,Resolved,2026-05-11 11:55:00,2026-05-11 15:39:00,2026-05-11 21:31:00,12,6.56
+372,7,3,Mechanical,B-01 Conveyor: belt tension below specification,Critical,Resolved,2026-05-12 12:08:00,2026-05-12 17:34:00,2026-05-12 19:44:00,4,6.83
+373,22,2,Mechanical,D-04 Conveyor: bearing noise during operation,Medium,Resolved,2026-05-13 15:19:00,2026-05-13 17:38:00,2026-05-14 06:16:00,24,3.76
+374,1,3,Mechanical,A-01 Press: bearing noise during operation,Critical,Resolved,2026-05-14 11:34:00,2026-05-14 11:51:00,2026-05-14 13:02:00,4,0.79
+375,16,7,Process Quality,C-04 Tester: verification check flagged inconsistent output,Low,Resolved,2026-05-14 14:23:00,2026-05-17 15:47:00,2026-05-18 12:40:00,48,8.10
+376,1,2,Mechanical,A-01 Press: belt tension below specification,Medium,Resolved,2026-05-14 15:46:00,2026-05-14 17:25:00,2026-05-15 04:05:00,24,0.00
+377,14,3,Mechanical,C-02 Conveyor: drive vibration above normal,Low,Resolved,2026-05-14 19:18:00,2026-05-15 09:52:00,2026-05-15 23:26:00,48,0.94
+378,23,2,Mechanical,D-05 Feeder: belt tension below specification,Low,Resolved,2026-05-14 21:12:00,2026-05-15 00:39:00,2026-05-17 10:52:00,48,0.00
+379,9,7,Controls,B-03 Tester: feedback signal drifted from its setpoint,Medium,Resolved,2026-05-14 21:39:00,2026-05-14 22:36:00,2026-05-15 15:19:00,24,0.00
+380,13,11,Pneumatics,C-01 Sealer: air pressure dropped during cycling,Medium,Resolved,2026-05-16 08:31:00,2026-05-16 12:17:00,2026-05-17 00:51:00,24,2.79
+381,16,5,Electrical,C-04 Tester: intermittent power at the drive,Medium,Resolved,2026-05-16 08:39:00,2026-05-16 14:50:00,2026-05-16 23:24:00,24,2.34
+382,18,7,Controls,C-06 Conveyor: drive reported a communication fault,Medium,Resolved,2026-05-16 17:44:00,2026-05-17 00:38:00,2026-05-17 15:29:00,24,2.56
+383,1,10,Pneumatics,A-01 Press: cylinder returned slowly,High,Resolved,2026-05-17 07:59:00,2026-05-17 09:42:00,2026-05-17 13:59:00,12,1.75
+384,7,3,Mechanical,B-01 Conveyor: drive vibration above normal,Low,Resolved,2026-05-17 09:36:00,2026-05-18 11:55:00,2026-05-19 23:23:00,48,0.00
+385,13,11,Pneumatics,C-01 Sealer: air pressure dropped during cycling,Low,Resolved,2026-05-17 14:04:00,2026-05-18 01:16:00,2026-05-18 21:42:00,48,1.09
+386,10,2,Mechanical,B-04 Feeder: belt tension below specification,High,Resolved,2026-05-17 17:12:00,2026-05-17 22:46:00,2026-05-18 05:28:00,12,5.15
+387,2,9,Controls,A-02 Feeder: drive reported a communication fault,Medium,Resolved,2026-05-18 10:20:00,2026-05-18 10:58:00,2026-05-18 23:43:00,24,3.59
+388,10,1,Mechanical,B-04 Feeder: belt tension below specification,Medium,Resolved,2026-05-18 11:40:00,2026-05-18 14:36:00,2026-05-19 20:35:00,24,0.00
+389,8,9,Controls,B-02 Robot: feedback signal drifted from its setpoint,High,Resolved,2026-05-18 11:42:00,2026-05-18 14:07:00,2026-05-18 20:44:00,12,2.48
+390,1,3,Mechanical,A-01 Press: belt tension below specification,High,Resolved,2026-05-18 18:24:00,2026-05-19 06:32:00,2026-05-19 17:10:00,12,4.82
+391,20,5,Electrical,D-02 Press: intermittent power at the drive,High,Resolved,2026-05-18 18:40:00,2026-05-18 19:16:00,2026-05-19 01:30:00,12,2.25
+392,19,8,Process Quality,D-01 Tester: recipe change required recalibration,Medium,Resolved,2026-05-18 19:03:00,2026-05-19 02:30:00,2026-05-19 14:21:00,24,1.20
+393,10,2,Mechanical,B-04 Feeder: belt tension below specification,Low,Resolved,2026-05-18 19:43:00,2026-05-21 22:04:00,2026-05-23 21:06:00,48,11.55
+394,8,8,Controls,B-02 Robot: feedback signal drifted from its setpoint,High,Resolved,2026-05-18 20:13:00,2026-05-18 21:14:00,2026-05-19 01:32:00,12,2.17
+395,3,1,Mechanical,A-03 Conveyor: belt tension below specification,Low,Resolved,2026-05-19 06:21:00,2026-05-20 07:02:00,2026-05-20 17:36:00,48,0.00
+396,21,5,Electrical,D-03 Robot: motor overload relay tripped,Medium,Resolved,2026-05-19 08:43:00,2026-05-19 16:33:00,2026-05-20 02:11:00,24,2.11
+397,23,2,Mechanical,D-05 Feeder: drive vibration above normal,Medium,Resolved,2026-05-19 14:47:00,2026-05-19 17:18:00,2026-05-20 11:02:00,24,5.02
+398,22,3,Mechanical,D-04 Conveyor: belt tension below specification,High,Resolved,2026-05-20 12:23:00,2026-05-20 13:25:00,2026-05-21 01:36:00,12,2.95
+399,15,1,Mechanical,C-03 Feeder: bearing noise during operation,Low,Resolved,2026-05-20 16:39:00,2026-05-21 09:57:00,2026-05-22 13:48:00,48,3.64
+400,10,8,Controls,B-04 Feeder: drive reported a communication fault,High,Resolved,2026-05-20 16:48:00,2026-05-20 18:09:00,2026-05-21 06:46:00,12,4.20
+401,19,5,Electrical,D-01 Tester: intermittent power at the drive,Medium,Resolved,2026-05-21 06:08:00,2026-05-22 13:24:00,2026-05-22 19:57:00,24,2.23
+402,22,7,Controls,D-04 Conveyor: feedback signal drifted from its setpoint,Low,Resolved,2026-05-21 07:12:00,2026-05-21 17:17:00,2026-05-22 19:00:00,48,2.14
+403,8,2,Mechanical,B-02 Robot: drive vibration above normal,Low,Resolved,2026-05-21 10:40:00,2026-05-23 07:07:00,2026-05-23 23:38:00,48,0.00
+404,2,2,Mechanical,A-02 Feeder: bearing noise during operation,High,Resolved,2026-05-21 11:09:00,2026-05-21 12:55:00,2026-05-21 21:08:00,12,2.47
+405,7,5,Electrical,B-01 Conveyor: starter contactor failed to engage,Critical,Resolved,2026-05-21 17:05:00,2026-05-21 18:01:00,2026-05-21 21:02:00,4,3.92
+406,21,8,Controls,D-03 Robot: position sensor missed a cycle,High,Resolved,2026-05-23 13:13:00,2026-05-23 14:29:00,2026-05-23 18:03:00,12,1.17
+407,22,5,Electrical,D-04 Conveyor: motor overload relay tripped,Low,Resolved,2026-05-23 16:28:00,2026-05-24 05:05:00,2026-05-25 02:33:00,48,1.55
+408,22,6,Electrical,D-04 Conveyor: intermittent power at the drive,Medium,Resolved,2026-05-24 11:42:00,2026-05-24 12:53:00,2026-05-25 01:35:00,24,1.80
+409,10,1,Mechanical,B-04 Feeder: drive vibration above normal,High,Resolved,2026-05-25 20:02:00,2026-05-25 22:48:00,2026-05-26 03:52:00,12,3.46
+410,19,7,Process Quality,D-01 Tester: output drifted outside process tolerance,Low,Resolved,2026-05-27 16:11:00,2026-05-27 19:11:00,2026-05-30 01:44:00,48,1.60
+411,18,3,Mechanical,C-06 Conveyor: drive vibration above normal,Medium,Resolved,2026-05-28 08:55:00,2026-05-28 16:32:00,2026-05-29 03:20:00,24,1.04
+412,10,7,Controls,B-04 Feeder: position sensor missed a cycle,Low,Resolved,2026-05-28 18:00:00,2026-05-28 22:08:00,2026-05-31 01:08:00,48,5.79
+413,7,2,Mechanical,B-01 Conveyor: drive vibration above normal,Low,Resolved,2026-05-28 21:12:00,2026-05-29 06:05:00,2026-05-31 15:34:00,48,0.00
+414,16,9,Process Quality,C-04 Tester: output drifted outside process tolerance,Medium,Resolved,2026-05-29 06:21:00,2026-05-29 10:58:00,2026-05-30 02:50:00,24,1.41
+415,9,8,Controls,B-03 Tester: position sensor missed a cycle,Medium,Resolved,2026-05-29 09:26:00,2026-05-31 00:28:00,2026-05-31 17:40:00,24,13.97
+416,7,3,Mechanical,B-01 Conveyor: bearing noise during operation,High,Resolved,2026-05-29 11:10:00,2026-05-29 13:35:00,2026-05-29 20:57:00,12,3.63
+417,19,7,Process Quality,D-01 Tester: verification check flagged inconsistent output,Low,Resolved,2026-05-29 20:02:00,2026-05-30 07:06:00,2026-05-31 00:55:00,48,0.00
+418,2,7,Controls,A-02 Feeder: feedback signal drifted from its setpoint,Medium,Resolved,2026-05-30 08:05:00,2026-05-30 15:02:00,2026-05-31 02:47:00,24,2.77
+419,3,2,Mechanical,A-03 Conveyor: bearing noise during operation,Medium,Resolved,2026-05-30 08:50:00,2026-05-30 10:36:00,2026-05-30 20:58:00,24,1.77
+420,19,8,Process Quality,D-01 Tester: verification check flagged inconsistent output,Medium,Resolved,2026-05-30 20:42:00,2026-05-31 01:42:00,2026-05-31 17:33:00,24,1.31
+421,9,8,Process Quality,B-03 Tester: output drifted outside process tolerance,Medium,Resolved,2026-05-31 12:37:00,2026-05-31 18:43:00,2026-06-01 07:37:00,24,1.72
+422,20,11,Pneumatics,D-02 Press: air leak detected at the valve manifold,Low,Resolved,2026-05-31 17:59:00,2026-06-01 01:38:00,2026-06-01 12:32:00,48,1.02
+423,4,6,Electrical,A-04 Robot: intermittent power at the drive,Low,Resolved,2026-06-01 15:03:00,2026-06-02 01:49:00,2026-06-03 03:34:00,48,2.47
+424,7,3,Mechanical,B-01 Conveyor: drive vibration above normal,Medium,Resolved,2026-06-01 15:35:00,2026-06-02 09:16:00,2026-06-03 07:51:00,24,9.99
+425,15,3,Mechanical,C-03 Feeder: belt tension below specification,Medium,Resolved,2026-06-02 06:02:00,2026-06-02 12:15:00,2026-06-02 23:16:00,24,4.98
+426,4,8,Controls,A-04 Robot: position sensor missed a cycle,Low,Resolved,2026-06-02 17:17:00,2026-06-03 01:58:00,2026-06-04 09:51:00,48,3.58
+427,7,1,Mechanical,B-01 Conveyor: bearing noise during operation,Medium,Resolved,2026-06-02 17:45:00,2026-06-04 04:18:00,2026-06-04 15:21:00,24,1.05
+428,5,7,Process Quality,A-05 Tester: verification check flagged inconsistent output,Low,Resolved,2026-06-02 18:30:00,2026-06-03 06:19:00,2026-06-03 19:48:00,48,1.12
+429,7,1,Mechanical,B-01 Conveyor: drive vibration above normal,High,Resolved,2026-06-03 18:41:00,2026-06-03 20:13:00,2026-06-04 03:30:00,12,3.58
+430,11,3,Mechanical,B-05 Conveyor: drive vibration above normal,Low,Resolved,2026-06-03 21:47:00,2026-06-04 06:03:00,2026-06-04 20:11:00,48,2.45
+431,20,3,Mechanical,D-02 Press: bearing noise during operation,Medium,Resolved,2026-06-03 21:56:00,2026-06-04 05:58:00,2026-06-04 21:48:00,24,4.11
+432,7,8,Controls,B-01 Conveyor: drive reported a communication fault,High,Resolved,2026-06-04 17:52:00,2026-06-04 18:22:00,2026-06-05 02:01:00,12,3.98
+433,1,12,Pneumatics,A-01 Press: cylinder returned slowly,Low,Resolved,2026-06-05 20:06:00,2026-06-06 02:08:00,2026-06-06 11:13:00,48,1.20
+434,8,7,Controls,B-02 Robot: feedback signal drifted from its setpoint,Medium,Resolved,2026-06-06 16:08:00,2026-06-06 20:51:00,2026-06-08 03:33:00,24,8.16
+435,17,10,Pneumatics,C-05 Sealer: air pressure dropped during cycling,Medium,Resolved,2026-06-06 17:05:00,2026-06-06 21:37:00,2026-06-08 06:48:00,24,4.96
+436,4,7,Controls,A-04 Robot: drive reported a communication fault,High,Resolved,2026-06-06 21:30:00,2026-06-06 22:27:00,2026-06-07 13:09:00,12,5.81
+437,5,8,Process Quality,A-05 Tester: output drifted outside process tolerance,High,Resolved,2026-06-07 10:45:00,2026-06-07 14:32:00,2026-06-07 20:39:00,12,4.82
+438,2,2,Mechanical,A-02 Feeder: drive vibration above normal,Low,Resolved,2026-06-07 18:20:00,2026-06-08 05:27:00,2026-06-09 21:32:00,48,1.72
+439,7,4,Electrical,B-01 Conveyor: motor overload relay tripped,Low,Resolved,2026-06-07 19:28:00,2026-06-08 06:23:00,2026-06-08 16:12:00,48,0.00
+440,10,11,Pneumatics,B-04 Feeder: cylinder returned slowly,Medium,Resolved,2026-06-07 23:22:00,2026-06-08 18:44:00,2026-06-09 09:23:00,24,0.00
+441,21,7,Controls,D-03 Robot: drive reported a communication fault,High,Resolved,2026-06-08 08:35:00,2026-06-08 11:16:00,2026-06-08 18:23:00,12,4.85
+442,7,8,Controls,B-01 Conveyor: position sensor missed a cycle,Low,Resolved,2026-06-08 12:28:00,2026-06-10 15:23:00,2026-06-12 00:23:00,48,9.32
+443,9,6,Electrical,B-03 Tester: intermittent power at the drive,Medium,Resolved,2026-06-08 18:33:00,2026-06-10 01:02:00,2026-06-10 08:01:00,24,2.67
+444,7,3,Mechanical,B-01 Conveyor: bearing noise during operation,Low,Resolved,2026-06-08 20:09:00,2026-06-10 08:54:00,2026-06-11 13:42:00,48,7.65
+445,4,8,Controls,A-04 Robot: feedback signal drifted from its setpoint,Medium,Resolved,2026-06-09 08:50:00,2026-06-09 16:04:00,2026-06-10 00:04:00,24,4.72
+446,22,5,Electrical,D-04 Conveyor: motor overload relay tripped,High,Resolved,2026-06-09 08:55:00,2026-06-09 12:28:00,2026-06-09 17:27:00,12,2.05
+447,13,12,Pneumatics,C-01 Sealer: air leak detected at the valve manifold,Low,Resolved,2026-06-10 18:16:00,2026-06-12 00:08:00,2026-06-13 22:48:00,48,7.03
+448,9,4,Electrical,B-03 Tester: intermittent power at the drive,Medium,Resolved,2026-06-11 06:37:00,2026-06-11 08:01:00,2026-06-11 20:32:00,24,1.06
+449,4,5,Electrical,A-04 Robot: intermittent power at the drive,Medium,Resolved,2026-06-11 12:13:00,2026-06-11 14:15:00,2026-06-12 02:38:00,24,0.29
+450,13,7,Process Quality,C-01 Sealer: output drifted outside process tolerance,Low,Resolved,2026-06-11 19:27:00,2026-06-11 22:47:00,2026-06-13 03:34:00,48,1.49
+451,14,4,Electrical,C-02 Conveyor: motor overload relay tripped,Critical,Resolved,2026-06-12 08:02:00,2026-06-12 09:20:00,2026-06-12 10:34:00,4,1.65
+452,9,5,Electrical,B-03 Tester: intermittent power at the drive,High,Resolved,2026-06-12 09:46:00,2026-06-12 12:32:00,2026-06-12 20:13:00,12,7.26
+453,18,3,Mechanical,C-06 Conveyor: drive vibration above normal,Medium,Resolved,2026-06-12 12:25:00,2026-06-12 19:32:00,2026-06-12 23:32:00,24,3.29
+454,4,3,Mechanical,A-04 Robot: bearing noise during operation,High,Resolved,2026-06-12 14:37:00,2026-06-12 16:38:00,2026-06-13 00:19:00,12,6.17
+455,5,9,Process Quality,A-05 Tester: recipe change required recalibration,Medium,Resolved,2026-06-12 16:42:00,2026-06-12 23:50:00,2026-06-13 15:33:00,24,0.94
+456,2,3,Mechanical,A-02 Feeder: drive vibration above normal,High,Resolved,2026-06-12 16:47:00,2026-06-12 19:23:00,2026-06-13 01:03:00,12,2.56
+457,7,1,Mechanical,B-01 Conveyor: belt tension below specification,Low,Resolved,2026-06-13 09:04:00,2026-06-13 12:27:00,2026-06-14 10:30:00,48,0.00
+458,11,4,Electrical,B-05 Conveyor: intermittent power at the drive,High,Resolved,2026-06-13 10:35:00,2026-06-13 14:49:00,2026-06-13 18:56:00,12,5.84
+459,16,7,Controls,C-04 Tester: position sensor missed a cycle,High,Resolved,2026-06-13 12:21:00,2026-06-13 15:45:00,2026-06-14 02:50:00,12,5.20
+460,17,11,Pneumatics,C-05 Sealer: air leak detected at the valve manifold,Medium,Resolved,2026-06-13 17:40:00,2026-06-13 22:09:00,2026-06-14 18:59:00,24,8.39
+461,7,1,Mechanical,B-01 Conveyor: belt tension below specification,High,Resolved,2026-06-13 18:42:00,2026-06-13 20:16:00,2026-06-14 06:59:00,12,5.51
+462,18,2,Mechanical,C-06 Conveyor: bearing noise during operation,Critical,Resolved,2026-06-13 20:12:00,2026-06-13 21:05:00,2026-06-14 00:22:00,4,2.66
+463,5,4,Electrical,A-05 Tester: motor overload relay tripped,Critical,Resolved,2026-06-14 06:15:00,2026-06-14 07:28:00,2026-06-14 09:39:00,4,1.87
+464,15,2,Mechanical,C-03 Feeder: belt tension below specification,Medium,Resolved,2026-06-14 13:36:00,2026-06-14 17:10:00,2026-06-15 14:46:00,24,0.00
+465,8,3,Mechanical,B-02 Robot: bearing noise during operation,High,Resolved,2026-06-14 14:03:00,2026-06-15 06:41:00,2026-06-15 17:48:00,12,17.45
+466,11,6,Electrical,B-05 Conveyor: intermittent power at the drive,Low,Resolved,2026-06-14 14:52:00,2026-06-15 23:49:00,2026-06-17 05:30:00,48,0.00
+467,7,3,Mechanical,B-01 Conveyor: bearing noise during operation,Medium,Resolved,2026-06-14 20:40:00,2026-06-15 08:06:00,2026-06-15 16:44:00,24,1.97
+468,7,2,Mechanical,B-01 Conveyor: drive vibration above normal,Low,Resolved,2026-06-15 06:15:00,2026-06-15 10:04:00,2026-06-17 13:32:00,48,0.00
+469,3,3,Mechanical,A-03 Conveyor: bearing noise during operation,High,Resolved,2026-06-15 15:11:00,2026-06-15 16:31:00,2026-06-15 19:46:00,12,1.83
+470,13,7,Process Quality,C-01 Sealer: verification check flagged inconsistent output,Medium,Resolved,2026-06-15 17:06:00,2026-06-16 18:58:00,2026-06-17 09:48:00,24,3.94
+471,24,12,Pneumatics,D-06 Sealer: air leak detected at the valve manifold,Medium,Resolved,2026-06-15 18:37:00,2026-06-15 19:32:00,2026-06-16 09:44:00,24,1.34
+472,8,8,Controls,B-02 Robot: drive reported a communication fault,Medium,Resolved,2026-06-15 19:01:00,2026-06-16 00:01:00,2026-06-16 14:07:00,24,3.90
+473,7,1,Mechanical,B-01 Conveyor: drive vibration above normal,Medium,Resolved,2026-06-16 07:37:00,2026-06-16 13:13:00,2026-06-16 17:55:00,24,0.42
+474,22,2,Mechanical,D-04 Conveyor: belt tension below specification,Medium,Resolved,2026-06-16 16:16:00,2026-06-16 19:50:00,2026-06-18 05:14:00,24,0.00
+475,2,2,Mechanical,A-02 Feeder: bearing noise during operation,Medium,Resolved,2026-06-17 08:35:00,2026-06-17 12:50:00,2026-06-18 07:05:00,24,7.35
+476,12,2,Mechanical,B-06 Robot: drive vibration above normal,Critical,Resolved,2026-06-17 17:03:00,2026-06-17 17:50:00,2026-06-17 20:30:00,4,3.04
+477,10,1,Mechanical,B-04 Feeder: belt tension below specification,Low,Resolved,2026-06-17 21:35:00,2026-06-18 03:19:00,2026-06-19 03:41:00,48,2.21
+478,24,12,Pneumatics,D-06 Sealer: air pressure dropped during cycling,High,Resolved,2026-06-18 07:08:00,2026-06-18 08:31:00,2026-06-18 13:23:00,12,1.77
+479,1,2,Mechanical,A-01 Press: belt tension below specification,High,Resolved,2026-06-18 11:12:00,2026-06-19 01:12:00,2026-06-19 06:07:00,12,7.84
+480,21,3,Mechanical,D-03 Robot: belt tension below specification,Medium,Resolved,2026-06-18 16:18:00,2026-06-18 16:57:00,2026-06-19 01:13:00,24,2.26
+481,14,8,Controls,C-02 Conveyor: drive reported a communication fault,High,Resolved,2026-06-19 11:26:00,2026-06-19 12:37:00,2026-06-19 16:28:00,12,1.85
+482,12,5,Electrical,B-06 Robot: intermittent power at the drive,Medium,Resolved,2026-06-19 16:43:00,2026-06-20 10:09:00,2026-06-21 14:31:00,24,11.04
+483,13,12,Pneumatics,C-01 Sealer: cylinder returned slowly,Medium,Resolved,2026-06-19 21:57:00,2026-06-20 02:20:00,2026-06-20 15:08:00,24,1.39
+484,5,8,Process Quality,A-05 Tester: verification check flagged inconsistent output,Medium,Resolved,2026-06-20 06:25:00,2026-06-20 07:58:00,2026-06-20 12:46:00,24,1.05
+485,19,7,Controls,D-01 Tester: position sensor missed a cycle,Medium,Resolved,2026-06-20 06:45:00,2026-06-20 08:32:00,2026-06-20 22:08:00,24,2.31
+486,10,12,Pneumatics,B-04 Feeder: cylinder returned slowly,Medium,Resolved,2026-06-21 11:08:00,2026-06-21 13:25:00,2026-06-22 08:54:00,24,6.11
+487,11,1,Mechanical,B-05 Conveyor: bearing noise during operation,Medium,Resolved,2026-06-21 17:45:00,2026-06-21 20:58:00,2026-06-23 03:13:00,24,10.82
+488,18,3,Mechanical,C-06 Conveyor: belt tension below specification,Low,Resolved,2026-06-22 06:14:00,2026-06-22 07:52:00,2026-06-23 06:41:00,48,0.00
+489,7,3,Mechanical,B-01 Conveyor: belt tension below specification,High,Resolved,2026-06-22 09:49:00,2026-06-22 10:03:00,2026-06-22 21:19:00,12,6.01
+490,9,9,Controls,B-03 Tester: drive reported a communication fault,High,Resolved,2026-06-22 13:26:00,2026-06-22 15:09:00,2026-06-23 01:30:00,12,3.96
+491,18,1,Mechanical,C-06 Conveyor: belt tension below specification,Medium,Resolved,2026-06-23 17:19:00,2026-06-23 21:30:00,2026-06-24 00:50:00,24,0.47
+492,17,7,Process Quality,C-05 Sealer: verification check flagged inconsistent output,Low,Resolved,2026-06-24 01:29:00,2026-06-26 18:58:00,2026-06-27 19:05:00,48,10.22
+493,10,11,Pneumatics,B-04 Feeder: cylinder returned slowly,High,Resolved,2026-06-24 11:55:00,2026-06-24 15:44:00,2026-06-25 01:15:00,12,5.81
+494,20,6,Electrical,D-02 Press: intermittent power at the drive,Medium,Resolved,2026-06-24 12:24:00,2026-06-24 18:00:00,2026-06-25 14:51:00,24,0.19
+495,22,9,Controls,D-04 Conveyor: position sensor missed a cycle,Medium,Resolved,2026-06-24 16:59:00,2026-06-25 18:16:00,2026-06-26 13:09:00,24,12.36
+496,1,3,Mechanical,A-01 Press: drive vibration above normal,High,Resolved,2026-06-24 21:21:00,2026-06-25 01:32:00,2026-06-25 10:01:00,12,7.05
+497,20,11,Pneumatics,D-02 Press: air pressure dropped during cycling,Medium,Resolved,2026-06-25 17:12:00,2026-06-26 16:27:00,2026-06-27 04:57:00,24,7.36
+498,4,3,Mechanical,A-04 Robot: bearing noise during operation,Low,In Progress,2026-06-25 17:41:00,2026-06-26 04:42:00,,48,0.00
+499,4,6,Electrical,A-04 Robot: intermittent power at the drive,Medium,Open,2026-06-26 09:12:00,,,24,4.51
+500,12,9,Controls,B-06 Robot: drive reported a communication fault,Medium,Resolved,2026-06-26 09:56:00,2026-06-26 14:52:00,2026-06-27 17:39:00,24,7.28
+501,22,,Electrical,D-04 Conveyor: intermittent power at the drive,Medium,Open,2026-06-26 13:29:00,,,24,2.10
+502,6,12,Pneumatics,A-06 Press: air pressure dropped during cycling,Medium,Open,2026-06-26 13:36:00,,,24,4.85
+503,21,5,Electrical,D-03 Robot: starter contactor failed to engage,Medium,Resolved,2026-06-26 13:48:00,2026-06-26 23:11:00,2026-06-27 04:02:00,24,0.00
+504,19,,Controls,D-01 Tester: feedback signal drifted from its setpoint,Medium,Open,2026-06-26 15:58:00,,,24,5.59
+505,23,9,Controls,D-05 Feeder: position sensor missed a cycle,High,Resolved,2026-06-27 09:09:00,2026-06-27 10:45:00,2026-06-27 20:09:00,12,2.75
+506,7,1,Mechanical,B-01 Conveyor: belt tension below specification,Low,Resolved,2026-06-27 13:01:00,2026-06-28 11:30:00,2026-06-30 09:54:00,48,2.78
+507,13,11,Pneumatics,C-01 Sealer: cylinder returned slowly,Medium,Resolved,2026-06-27 13:43:00,2026-06-27 16:06:00,2026-06-27 22:32:00,24,1.43
+508,4,5,Electrical,A-04 Robot: starter contactor failed to engage,Medium,Resolved,2026-06-27 18:11:00,2026-06-27 22:11:00,2026-06-28 07:34:00,24,0.00
+509,17,10,Pneumatics,C-05 Sealer: cylinder returned slowly,Low,In Progress,2026-06-27 19:40:00,2026-06-30 11:08:00,,48,3.16
+510,4,7,Controls,A-04 Robot: feedback signal drifted from its setpoint,Medium,Resolved,2026-06-27 20:52:00,2026-06-28 20:29:00,2026-06-29 15:36:00,24,5.51
+511,8,,Controls,B-02 Robot: feedback signal drifted from its setpoint,Medium,Open,2026-06-28 07:25:00,,,24,0.00
+512,19,6,Electrical,D-01 Tester: intermittent power at the drive,Medium,Resolved,2026-06-28 11:44:00,2026-06-28 14:33:00,2026-06-29 11:36:00,24,2.44
+513,6,3,Mechanical,A-06 Press: drive vibration above normal,Low,In Progress,2026-06-28 13:17:00,2026-06-28 16:52:00,,48,3.91
+514,4,9,Controls,A-04 Robot: feedback signal drifted from its setpoint,Critical,Resolved,2026-06-28 14:29:00,2026-06-28 15:09:00,2026-06-28 17:04:00,4,1.84
+515,19,8,Process Quality,D-01 Tester: recipe change required recalibration,Medium,Resolved,2026-06-28 16:31:00,2026-06-28 19:55:00,2026-06-29 08:41:00,24,3.16
+516,6,6,Electrical,A-06 Press: starter contactor failed to engage,Medium,Resolved,2026-06-28 17:22:00,2026-06-28 22:10:00,2026-06-29 09:46:00,24,4.92
+517,3,8,Controls,A-03 Conveyor: drive reported a communication fault,Medium,Resolved,2026-06-28 18:13:00,2026-06-29 12:24:00,2026-06-30 01:02:00,24,1.26
+518,10,8,Controls,B-04 Feeder: drive reported a communication fault,Medium,Resolved,2026-06-28 18:22:00,2026-06-28 21:16:00,2026-06-29 10:45:00,24,0.37
+519,24,8,Process Quality,D-06 Sealer: verification check flagged inconsistent output,Medium,In Progress,2026-06-28 20:11:00,2026-06-28 23:05:00,,24,0.54
+520,19,7,Controls,D-01 Tester: position sensor missed a cycle,High,Resolved,2026-06-29 07:28:00,2026-06-29 08:25:00,2026-06-29 19:44:00,12,8.45
+521,8,8,Controls,B-02 Robot: feedback signal drifted from its setpoint,Medium,In Progress,2026-06-29 08:24:00,2026-06-30 21:52:00,,24,0.19
+522,10,8,Controls,B-04 Feeder: feedback signal drifted from its setpoint,High,Resolved,2026-06-29 12:04:00,2026-06-29 13:41:00,2026-06-29 18:38:00,12,3.21
+523,12,8,Controls,B-06 Robot: feedback signal drifted from its setpoint,High,Resolved,2026-06-29 13:06:00,2026-06-29 14:24:00,2026-06-29 22:02:00,12,4.43
+524,19,9,Process Quality,D-01 Tester: recipe change required recalibration,Medium,In Progress,2026-06-29 13:20:00,2026-06-29 16:33:00,,24,0.00
+525,3,5,Electrical,A-03 Conveyor: intermittent power at the drive,Medium,Resolved,2026-06-29 15:06:00,2026-06-29 20:06:00,2026-06-30 00:57:00,24,2.70
+526,6,1,Mechanical,A-06 Press: bearing noise during operation,Medium,Resolved,2026-06-29 16:53:00,2026-06-29 18:50:00,2026-06-30 09:06:00,24,4.76
+527,1,10,Pneumatics,A-01 Press: air pressure dropped during cycling,Low,In Progress,2026-06-29 19:29:00,2026-06-30 09:27:00,,48,2.16
+528,4,3,Mechanical,A-04 Robot: bearing noise during operation,Medium,In Progress,2026-06-30 11:01:00,2026-06-30 12:56:00,,24,6.53
+529,21,,Controls,D-03 Robot: drive reported a communication fault,Low,Open,2026-06-30 12:40:00,,,48,4.30
+530,4,5,Electrical,A-04 Robot: motor overload relay tripped,High,In Progress,2026-06-30 13:05:00,2026-06-30 16:25:00,,12,7.22
+531,7,6,Electrical,B-01 Conveyor: motor overload relay tripped,Low,In Progress,2026-06-30 13:21:00,2026-06-30 22:10:00,,48,3.51
+532,2,,Mechanical,A-02 Feeder: bearing noise during operation,Critical,Open,2026-06-30 15:54:00,,,4,3.85
+533,2,12,Pneumatics,A-02 Feeder: air pressure dropped during cycling,Low,In Progress,2026-06-30 16:18:00,2026-06-30 23:59:00,,48,1.76
+534,8,8,Controls,B-02 Robot: position sensor missed a cycle,Low,Open,2026-06-30 18:08:00,,,48,2.07
+535,1,1,Mechanical,Press guide realigned after excessive play,High,Resolved,2026-06-17 08:00:00,2026-06-17 09:00:00,2026-06-17 20:00:00,12,3.25
+536,2,4,Electrical,Feeder motor starter replaced after repeated trips,High,Resolved,2026-06-17 08:00:00,2026-06-17 09:00:00,2026-06-17 20:01:00,12,4.00
+537,3,,Controls,Conveyor encoder fault awaiting dispatch,Critical,Open,2026-06-30 20:00:00,,,4,2.50
+538,4,7,Controls,Robot axis position fault under diagnosis,Critical,In Progress,2026-06-30 19:59:00,2026-06-30 21:00:00,,4,2.75
+539,5,,Process Quality,Tester calibration check queued for the next shift,Low,Open,2026-06-30 18:00:00,,,48,0.00
+540,6,10,Pneumatics,Standby press cylinder seal replaced after an air leak,High,Resolved,2026-06-17 08:00:00,2026-06-17 09:00:00,2026-06-17 19:59:00,12,2.00

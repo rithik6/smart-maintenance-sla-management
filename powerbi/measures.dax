@@ -1,0 +1,58 @@
+// Create each measure separately in the Tickets table.
+
+Total Tickets =
+COALESCE ( COUNTROWS ( Tickets ), 0 )
+
+Open Tickets =
+CALCULATE (
+    [Total Tickets],
+    KEEPFILTERS ( Tickets[Status] IN { "Open", "In Progress" } )
+)
+
+Overdue Tickets =
+VAR SnapshotAt = SELECTEDVALUE ( 'Report Snapshot'[Snapshot At] )
+RETURN
+    IF (
+        NOT ISBLANK ( SnapshotAt ),
+        CALCULATE ( [Open Tickets], KEEPFILTERS ( Tickets[SLA Deadline] < SnapshotAt ) )
+    )
+
+Resolved Tickets =
+CALCULATE ( [Total Tickets], KEEPFILTERS ( Tickets[Status] = "Resolved" ) )
+
+Resolved Within SLA =
+COALESCE (
+    COUNTROWS (
+        FILTER ( Tickets, Tickets[Status] = "Resolved" && Tickets[Resolved At] <= Tickets[SLA Deadline] )
+    ),
+    0
+)
+
+SLA Compliance % =
+DIVIDE ( [Resolved Within SLA], [Resolved Tickets] )
+
+MTTR Hours =
+CALCULATE ( AVERAGE ( Tickets[Repair Hours] ), KEEPFILTERS ( Tickets[Status] = "Resolved" ) )
+
+// Visual helper. On a table with one row per ticket, filter to values greater than zero.
+Hours Overdue =
+VAR SnapshotAt = SELECTEDVALUE ( 'Report Snapshot'[Snapshot At] )
+VAR Deadline = SELECTEDVALUE ( Tickets[SLA Deadline] )
+RETURN
+    IF (
+        HASONEVALUE ( Tickets[Ticket ID] ) && [Overdue Tickets] = 1,
+        DIVIDE ( DATEDIFF ( Deadline, SnapshotAt, SECOND ), 3600 )
+    )
+
+// Visual helper. Keep up to ten assets with at least two tickets in the selected scope.
+Repeat Incident Tickets =
+VAR AssetID = SELECTEDVALUE ( Equipment[Equipment ID] )
+VAR TicketCount = [Total Tickets]
+VAR HigherRankedAssets =
+    FILTER (
+        ALLSELECTED ( Equipment ),
+        VAR OtherCount = [Total Tickets]
+        RETURN OtherCount > TicketCount || ( OtherCount = TicketCount && Equipment[Equipment ID] < AssetID )
+    )
+RETURN
+    IF ( NOT ISBLANK ( AssetID ) && TicketCount >= 2 && COUNTROWS ( HigherRankedAssets ) < 10, TicketCount )

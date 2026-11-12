@@ -1,0 +1,58 @@
+// Paste this whole query into DAX Query View after loading the model.
+// Compare the six rows with sql/05_kpi_benchmarks.sql.
+DEFINE
+    MEASURE Tickets[Benchmark SLA Percent] =
+        VAR Rate = [SLA Compliance %]
+        RETURN IF ( NOT ISBLANK ( Rate ), ROUND ( Rate * 100, 4 ) )
+    MEASURE Tickets[Benchmark MTTR] =
+        VAR Hours = [MTTR Hours]
+        RETURN IF ( NOT ISBLANK ( Hours ), ROUND ( Hours, 4 ) )
+
+EVALUATE
+UNION (
+    ROW (
+        "Order", 1, "Scenario", "All tickets", "Total", [Total Tickets], "Open", [Open Tickets],
+        "Overdue", [Overdue Tickets], "SLA %", [Benchmark SLA Percent], "MTTR (h)", [Benchmark MTTR]
+    ),
+    CALCULATETABLE (
+        ROW (
+            "Order", 2, "Scenario", "June 2026", "Total", [Total Tickets], "Open", [Open Tickets],
+            "Overdue", [Overdue Tickets], "SLA %", [Benchmark SLA Percent], "MTTR (h)", [Benchmark MTTR]
+        ),
+        DATESBETWEEN ( 'Calendar'[Date], DATE ( 2026, 6, 1 ), DATE ( 2026, 6, 30 ) )
+    ),
+    CALCULATETABLE (
+        ROW (
+            "Order", 3, "Scenario", "Line B | High", "Total", [Total Tickets], "Open", [Open Tickets],
+            "Overdue", [Overdue Tickets], "SLA %", [Benchmark SLA Percent], "MTTR (h)", [Benchmark MTTR]
+        ),
+        TREATAS ( { "Line B" }, Equipment[Production Line] ),
+        TREATAS ( { "High" }, Tickets[Priority] )
+    ),
+    CALCULATETABLE (
+        ROW (
+            "Order", 4, "Scenario", "June 2026 | Line B | High | Resolved", "Total", [Total Tickets], "Open", [Open Tickets],
+            "Overdue", [Overdue Tickets], "SLA %", [Benchmark SLA Percent], "MTTR (h)", [Benchmark MTTR]
+        ),
+        DATESBETWEEN ( 'Calendar'[Date], DATE ( 2026, 6, 1 ), DATE ( 2026, 6, 30 ) ),
+        TREATAS ( { "Line B" }, Equipment[Production Line] ),
+        TREATAS ( { "High" }, Tickets[Priority] ),
+        TREATAS ( { "Resolved" }, Tickets[Status] )
+    ),
+    CALCULATETABLE (
+        ROW (
+            "Order", 5, "Scenario", "Open status", "Total", [Total Tickets], "Open", [Open Tickets],
+            "Overdue", [Overdue Tickets], "SLA %", [Benchmark SLA Percent], "MTTR (h)", [Benchmark MTTR]
+        ),
+        TREATAS ( { "Open" }, Tickets[Status] )
+    ),
+    CALCULATETABLE (
+        ROW (
+            "Order", 6, "Scenario", "January 2026 | Open", "Total", [Total Tickets], "Open", [Open Tickets],
+            "Overdue", [Overdue Tickets], "SLA %", [Benchmark SLA Percent], "MTTR (h)", [Benchmark MTTR]
+        ),
+        DATESBETWEEN ( 'Calendar'[Date], DATE ( 2026, 1, 1 ), DATE ( 2026, 1, 31 ) ),
+        TREATAS ( { "Open" }, Tickets[Status] )
+    )
+)
+ORDER BY [Order]

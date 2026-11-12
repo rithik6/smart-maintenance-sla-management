@@ -1,0 +1,544 @@
+{
+  "name": "Model",
+  "compatibilityLevel": 1600,
+  "model": {
+    "culture": "en-US",
+    "sourceQueryCulture": "en-US",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "tables": [
+      {
+        "name": "Equipment",
+        "columns": [
+          {
+            "name": "Equipment ID",
+            "dataType": "int64",
+            "sourceColumn": "Equipment ID",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Equipment Name",
+            "dataType": "string",
+            "sourceColumn": "Equipment Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Production Line",
+            "dataType": "string",
+            "sourceColumn": "Production Line",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Location",
+            "dataType": "string",
+            "sourceColumn": "Location",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Asset Status",
+            "dataType": "string",
+            "sourceColumn": "Asset Status",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Equipment",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"Maintenance Source\"{[Schema = \"maintenance\", Item = \"equipment\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Source, {{\"equipment_id\", Int64.Type}, {\"equipment_name\", type text}, {\"production_line\", type text}, {\"location\", type text}, {\"status\", type text}}),",
+                "    Renamed = Table.RenameColumns(Typed, {{\"equipment_id\", \"Equipment ID\"}, {\"equipment_name\", \"Equipment Name\"}, {\"production_line\", \"Production Line\"}, {\"location\", \"Location\"}, {\"status\", \"Asset Status\"}})",
+                "in",
+                "    Renamed"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Technicians",
+        "columns": [
+          {
+            "name": "Technician ID",
+            "dataType": "int64",
+            "sourceColumn": "Technician ID",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Technician Name",
+            "dataType": "string",
+            "sourceColumn": "Technician Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Specialization",
+            "dataType": "string",
+            "sourceColumn": "Specialization",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Technicians",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"Maintenance Source\"{[Schema = \"maintenance\", Item = \"technicians\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Source, {{\"technician_id\", Int64.Type}, {\"technician_name\", type text}, {\"specialization\", type text}}),",
+                "    Renamed = Table.RenameColumns(Typed, {{\"technician_id\", \"Technician ID\"}, {\"technician_name\", \"Technician Name\"}, {\"specialization\", \"Specialization\"}})",
+                "in",
+                "    Renamed"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Report Snapshot",
+        "columns": [
+          {
+            "name": "Period Start",
+            "dataType": "dateTime",
+            "sourceColumn": "Period Start",
+            "summarizeBy": "none",
+            "formatString": "dd MMM yyyy HH:mm"
+          },
+          {
+            "name": "Snapshot At",
+            "dataType": "dateTime",
+            "sourceColumn": "Snapshot At",
+            "summarizeBy": "none",
+            "formatString": "dd MMM yyyy HH:mm"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Report Snapshot",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"Maintenance Source\"{[Schema = \"maintenance\", Item = \"report_snapshot\"]}[Data],",
+                "    Typed = Table.TransformColumnTypes(Source, {{\"period_start_at\", type datetime}, {\"snapshot_at\", type datetime}}),",
+                "    Renamed = Table.RenameColumns(Typed, {{\"period_start_at\", \"Period Start\"}, {\"snapshot_at\", \"Snapshot At\"}})",
+                "in",
+                "    Renamed"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "isHidden": true
+      },
+      {
+        "name": "Tickets",
+        "columns": [
+          {
+            "name": "Ticket ID",
+            "dataType": "int64",
+            "sourceColumn": "Ticket ID",
+            "summarizeBy": "none",
+            "formatString": "0"
+          },
+          {
+            "name": "Equipment ID",
+            "dataType": "int64",
+            "sourceColumn": "Equipment ID",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Technician ID",
+            "dataType": "int64",
+            "sourceColumn": "Technician ID",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Issue Category",
+            "dataType": "string",
+            "sourceColumn": "Issue Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Description",
+            "dataType": "string",
+            "sourceColumn": "Description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Priority",
+            "dataType": "string",
+            "sourceColumn": "Priority",
+            "summarizeBy": "none",
+            "sortByColumn": "Priority Order"
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "summarizeBy": "none",
+            "sortByColumn": "Status Order"
+          },
+          {
+            "name": "Created At",
+            "dataType": "dateTime",
+            "sourceColumn": "Created At",
+            "summarizeBy": "none",
+            "formatString": "dd MMM yyyy HH:mm"
+          },
+          {
+            "name": "First Response At",
+            "dataType": "dateTime",
+            "sourceColumn": "First Response At",
+            "summarizeBy": "none",
+            "formatString": "dd MMM yyyy HH:mm"
+          },
+          {
+            "name": "Resolved At",
+            "dataType": "dateTime",
+            "sourceColumn": "Resolved At",
+            "summarizeBy": "none",
+            "formatString": "dd MMM yyyy HH:mm"
+          },
+          {
+            "name": "SLA Target Hours",
+            "dataType": "int64",
+            "sourceColumn": "SLA Target Hours",
+            "summarizeBy": "none",
+            "formatString": "0"
+          },
+          {
+            "name": "Estimated Downtime Hours",
+            "dataType": "decimal",
+            "sourceColumn": "Estimated Downtime Hours",
+            "summarizeBy": "none",
+            "formatString": "0.00"
+          },
+          {
+            "name": "Created Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Created Date",
+            "summarizeBy": "none",
+            "formatString": "dd MMM yyyy",
+            "isHidden": true
+          },
+          {
+            "name": "SLA Deadline",
+            "dataType": "dateTime",
+            "sourceColumn": "SLA Deadline",
+            "summarizeBy": "none",
+            "formatString": "dd MMM yyyy HH:mm"
+          },
+          {
+            "name": "Repair Hours",
+            "dataType": "double",
+            "sourceColumn": "Repair Hours",
+            "summarizeBy": "none",
+            "formatString": "0.00",
+            "isHidden": true
+          },
+          {
+            "name": "Priority Order",
+            "dataType": "int64",
+            "sourceColumn": "Priority Order",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          },
+          {
+            "name": "Status Order",
+            "dataType": "int64",
+            "sourceColumn": "Status Order",
+            "summarizeBy": "none",
+            "formatString": "0",
+            "isHidden": true
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Tickets",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"Maintenance Source\",",
+                "    Raw = Source{[Schema = \"maintenance\", Item = \"maintenance_tickets\"]}[Data],",
+                "    Scope = Source{[Schema = \"maintenance\", Item = \"report_snapshot\"]}[Data]{0},",
+                "    Typed = Table.TransformColumnTypes(Raw, {{\"ticket_id\", Int64.Type}, {\"equipment_id\", Int64.Type}, {\"technician_id\", Int64.Type}, {\"issue_category\", type text}, {\"description\", type text}, {\"priority\", type text}, {\"status\", type text}, {\"created_at\", type datetime}, {\"first_response_at\", type datetime}, {\"resolved_at\", type datetime}, {\"sla_target_hours\", Int64.Type}, {\"estimated_downtime_hours\", Currency.Type}}, \"en-US\"),",
+                "    InPeriod = Table.SelectRows(Typed, each [created_at] >= Scope[period_start_at] and [created_at] < Scope[snapshot_at]),",
+                "    Renamed = Table.RenameColumns(InPeriod, {{\"ticket_id\", \"Ticket ID\"}, {\"equipment_id\", \"Equipment ID\"}, {\"technician_id\", \"Technician ID\"}, {\"issue_category\", \"Issue Category\"}, {\"description\", \"Description\"}, {\"priority\", \"Priority\"}, {\"status\", \"Status\"}, {\"created_at\", \"Created At\"}, {\"first_response_at\", \"First Response At\"}, {\"resolved_at\", \"Resolved At\"}, {\"sla_target_hours\", \"SLA Target Hours\"}, {\"estimated_downtime_hours\", \"Estimated Downtime Hours\"}}),",
+                "    CreatedDate = Table.AddColumn(Renamed, \"Created Date\", each Date.From([Created At]), type date),",
+                "    Deadline = Table.AddColumn(CreatedDate, \"SLA Deadline\", each [Created At] + #duration(0, 1, 0, 0) * [SLA Target Hours], type datetime),",
+                "    RepairHours = Table.AddColumn(Deadline, \"Repair Hours\", each if [Resolved At] = null then null else Duration.TotalHours([Resolved At] - [First Response At]), type nullable number),",
+                "    PriorityOrder = Table.AddColumn(RepairHours, \"Priority Order\", each List.PositionOf({\"Critical\", \"High\", \"Medium\", \"Low\"}, [Priority]) + 1, Int64.Type),",
+                "    StatusOrder = Table.AddColumn(PriorityOrder, \"Status Order\", each List.PositionOf({\"Open\", \"In Progress\", \"Resolved\"}, [Status]) + 1, Int64.Type)",
+                "in",
+                "    StatusOrder"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Tickets",
+            "expression": [
+              "COALESCE ( COUNTROWS ( Tickets ), 0 )"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "Open Tickets",
+            "expression": [
+              "CALCULATE (",
+              "    [Total Tickets],",
+              "    KEEPFILTERS ( Tickets[Status] IN { \"Open\", \"In Progress\" } )",
+              ")"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "Overdue Tickets",
+            "expression": [
+              "VAR SnapshotAt = SELECTEDVALUE ( 'Report Snapshot'[Snapshot At] )",
+              "RETURN",
+              "    IF (",
+              "        NOT ISBLANK ( SnapshotAt ),",
+              "        CALCULATE ( [Open Tickets], KEEPFILTERS ( Tickets[SLA Deadline] < SnapshotAt ) )",
+              "    )"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "Resolved Tickets",
+            "expression": [
+              "CALCULATE ( [Total Tickets], KEEPFILTERS ( Tickets[Status] = \"Resolved\" ) )"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "Resolved Within SLA",
+            "expression": [
+              "COALESCE (",
+              "    COUNTROWS (",
+              "        FILTER ( Tickets, Tickets[Status] = \"Resolved\" && Tickets[Resolved At] <= Tickets[SLA Deadline] )",
+              "    ),",
+              "    0",
+              ")"
+            ],
+            "formatString": "#,0"
+          },
+          {
+            "name": "SLA Compliance %",
+            "expression": [
+              "DIVIDE ( [Resolved Within SLA], [Resolved Tickets] )"
+            ],
+            "formatString": "0.00%"
+          },
+          {
+            "name": "MTTR Hours",
+            "expression": [
+              "CALCULATE ( AVERAGE ( Tickets[Repair Hours] ), KEEPFILTERS ( Tickets[Status] = \"Resolved\" ) )"
+            ],
+            "formatString": "0.00\" h\""
+          },
+          {
+            "name": "Hours Overdue",
+            "expression": [
+              "VAR SnapshotAt = SELECTEDVALUE ( 'Report Snapshot'[Snapshot At] )",
+              "VAR Deadline = SELECTEDVALUE ( Tickets[SLA Deadline] )",
+              "RETURN",
+              "    IF (",
+              "        HASONEVALUE ( Tickets[Ticket ID] ) && [Overdue Tickets] = 1,",
+              "        DIVIDE ( DATEDIFF ( Deadline, SnapshotAt, SECOND ), 3600 )",
+              "    )"
+            ],
+            "formatString": "0.00\" h\""
+          },
+          {
+            "name": "Repeat Incident Tickets",
+            "expression": [
+              "VAR AssetID = SELECTEDVALUE ( Equipment[Equipment ID] )",
+              "VAR TicketCount = [Total Tickets]",
+              "VAR HigherRankedAssets =",
+              "    FILTER (",
+              "        ALLSELECTED ( Equipment ),",
+              "        VAR OtherCount = [Total Tickets]",
+              "        RETURN OtherCount > TicketCount || ( OtherCount = TicketCount && Equipment[Equipment ID] < AssetID )",
+              "    )",
+              "RETURN",
+              "    IF ( NOT ISBLANK ( AssetID ) && TicketCount >= 2 && COUNTROWS ( HigherRankedAssets ) < 10, TicketCount )"
+            ],
+            "formatString": "#,0"
+          }
+        ]
+      },
+      {
+        "name": "Calendar",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "formatString": "dd MMM yyyy"
+          },
+          {
+            "name": "Month Start",
+            "dataType": "dateTime",
+            "sourceColumn": "Month Start",
+            "summarizeBy": "none",
+            "formatString": "MMM yyyy",
+            "isHidden": true
+          },
+          {
+            "name": "Month",
+            "dataType": "string",
+            "sourceColumn": "Month",
+            "summarizeBy": "none",
+            "sortByColumn": "Month Start"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Calendar",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Scope = #\"Report Snapshot\"{0},",
+                "    StartDate = Date.From(Scope[Period Start]),",
+                "    EndDate = Date.From(Scope[Snapshot At]),",
+                "    Days = List.Dates(StartDate, Duration.Days(EndDate - StartDate), #duration(1, 0, 0, 0)),",
+                "    Dates = Table.FromColumns({Days}, type table [Date = date]),",
+                "    MonthStart = Table.AddColumn(Dates, \"Month Start\", each Date.StartOfMonth([Date]), type date),",
+                "    Month = Table.AddColumn(MonthStart, \"Month\", each Date.ToText([Date], [Format = \"MMM yyyy\", Culture = \"en-US\"]), type text)",
+                "in",
+                "    Month"
+              ]
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "94025795-1f3d-5704-82d5-1d2c6c4bd235",
+        "fromTable": "Tickets",
+        "fromColumn": "Equipment ID",
+        "toTable": "Equipment",
+        "toColumn": "Equipment ID",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "f3525b94-56d7-56ff-98d6-9a81d7991e07",
+        "fromTable": "Tickets",
+        "fromColumn": "Technician ID",
+        "toTable": "Technicians",
+        "toColumn": "Technician ID",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "3bf23663-5116-5f33-8b2c-6ebff9b1f45c",
+        "fromTable": "Tickets",
+        "fromColumn": "Created Date",
+        "toTable": "Calendar",
+        "toColumn": "Date",
+        "crossFilteringBehavior": "oneDirection"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "Data Source",
+        "kind": "m",
+        "expression": "\"Bundled Snapshot\" meta [IsParameterQuery = true, Type = \"Text\", IsParameterQueryRequired = true, List = {\"Bundled Snapshot\", \"PostgreSQL\"}, DefaultValue = \"Bundled Snapshot\"]"
+      },
+      {
+        "name": "PostgreSQL Server",
+        "kind": "m",
+        "expression": "\"localhost:5432\" meta [IsParameterQuery = true, Type = \"Text\", IsParameterQueryRequired = true]"
+      },
+      {
+        "name": "PostgreSQL Database",
+        "kind": "m",
+        "expression": "\"smart_maintenance_demo\" meta [IsParameterQuery = true, Type = \"Text\", IsParameterQueryRequired = true]"
+      },
+      {
+        "name": "Maintenance Source",
+        "kind": "m",
+        "expression": [
+          "if #\"Data Source\" = \"PostgreSQL\" then",
+          "    PostgreSQL.Database(#\"PostgreSQL Server\", #\"PostgreSQL Database\", [CreateNavigationProperties = false])",
+          "else",
+          "    let",
+          "        ParseCsv = (value as text) as table => Table.PromoteHeaders(Csv.Document(Binary.Decompress(Binary.FromText(value, BinaryEncoding.Base64), Compression.Deflate), [Delimiter = \",\", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]), [PromoteAllScalars = true]),",
+          "        Assets = ParseCsv(\"jdJNbsIwEAXgPafwAaYS/kmAZQBl1QUq3SOHjMBqsGnsIOX2ZVRRxRFuWFr6bL95Nn535npBGw6mBvxbWH1BuLau7o7BOHtojEVo3FHTCnzQofMzDsXbnLNdi97D+12wAkpdteaXsbXuobjvv+FMEBWsRKyxnbCSrGQbZ2/YuymtSCv24SoXJmhGNGOf6MNkiJxs/v9s+6BtXfWzBayphzjwGgrv8VI1/fDYJVExTPvcrcjJKOpzyOckVdRsQnKS2UsxuSCbT+fkEjY0+x5187h+Azt9/NInY08RVUTF6P4UzgjLaKwUzYmqqKsUXRDNXkq7JJpPpH38AL6CLdUwzLCF0ljjz6ODxZyoGP6slOQk5fARUlKQVKOwKSwJZ1G1KaqI5lFfY/qo4Ac=\"),",
+          "        Staff = ParseCsv(\"VdC7DsIwDIXhPU/BA3hoeu+MGLuVGUUhEpZMglpPPD1WB2KPv74zHU7xlTFiyA98AtfK4Z3g+CQJwm9gLNl52P6DS+NhlQqSgVxrqNXUGeo09YZ6uFGKvJ80GBo0jYZGTZOhCa4l817ocLOBucJiYKngGy1Sd0ZCxiRkjpBSZI6QqvQD\"),",
+          "        RawTickets = ParseCsv(\"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\"),",
+          "        TicketData = Table.ReplaceValue(RawTickets, \"\", null, Replacer.ReplaceValue, {\"technician_id\", \"first_response_at\", \"resolved_at\"}),",
+          "        Snapshot = #table(type table [period_start_at = datetime, snapshot_at = datetime], {{#datetime(2026, 1, 1, 0, 0, 0), #datetime(2026, 7, 1, 0, 0, 0)}}),",
+          "        Navigation = #table(type table [Schema = text, Item = text, Data = table], {{\"maintenance\", \"equipment\", Assets}, {\"maintenance\", \"technicians\", Staff}, {\"maintenance\", \"maintenance_tickets\", TicketData}, {\"maintenance\", \"report_snapshot\", Snapshot}})",
+          "    in",
+          "        Navigation"
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Data Source\", \"PostgreSQL Server\", \"PostgreSQL Database\", \"Maintenance Source\", \"Equipment\", \"Technicians\", \"Report Snapshot\", \"Tickets\", \"Calendar\"]"
+      }
+    ]
+  }
+}

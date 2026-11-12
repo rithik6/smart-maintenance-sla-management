@@ -1,0 +1,14 @@
+# User stories and acceptance criteria
+
+These stories describe hypothetical roles in the simulated maintenance operation. The UAT scenarios link the stories to the delivered report and database checks.
+
+| ID | Story | Testable acceptance criteria | Traceability |
+| --- | --- | --- | --- |
+| US-01 | As a production supervisor, I want each request tied to an asset so I can locate work for my production line. | Each ticket has a valid equipment ID. Selecting a production line limits ticket results to assets on that line. | FR-01, FR-06 · UAT-01, UAT-03 |
+| US-02 | As a maintenance technician, I want assignment and response details to be consistent so I can interpret ticket history. | A ticket can be unassigned while `Open`. `In Progress` and `Resolved` require a technician and first response. An unresolved ticket cannot have a resolution time. | FR-01 · UAT-01 |
+| US-03 | As a maintenance manager, I want to see overdue unresolved work so I can decide what to escalate first. | With all filters cleared, the report shows 22 open and 13 overdue tickets. The overdue worklist contains only breached unresolved work and sorts by earliest SLA deadline. | FR-02, FR-04 · UAT-02, UAT-06, UAT-08 |
+| US-04 | As an operations director, I want consistent SLA and repair measures so I can compare service performance. | The baseline is 320 on-time closures out of 518 resolved tickets and 16.95 h MTTR. An open-only selection shows blank SLA compliance and MTTR. | FR-03 · UAT-02, UAT-04 |
+| US-05 | As a maintenance manager, I want to see equipment with repeated incidents so I can choose where to investigate. | The equipment chart shows up to ten assets with at least two tickets in the selected scope. B-01 Conveyor ranks first with 64 tickets in the full period. Equal counts use equipment ID as the ranking tie-breaker. | FR-05 · UAT-07 |
+| US-06 | As a production supervisor, I want consistent filters on both pages so I can review the same ticket cohort. | Both pages have creation-date, production-line, priority, and status slicers. June, Line B, High, and Resolved returns 11 tickets and 63.64% SLA compliance. Page changes retain the selected values. | FR-06 · UAT-03, UAT-09 |
+| US-07 | As a BI support analyst, I want a repeatable Import setup so I can refresh the report from the demo database. | After configuring PostgreSQL credentials and refreshing, the model contains 540 tickets, 24 assets, 12 technicians, and one snapshot row. The six DAX scenarios reconcile with SQL. | FR-07 · UAT-10 |
+| US-08 | As a portfolio reviewer, I want to open the saved report and reproduce its results so I can assess the analysis. | `maintenance_dashboard.pbix` opens on the Operations Overview with the bundled synthetic model. Both pages render and the six benchmark scenarios match SQL. The README links to the source data, screenshots, and formulas. | FR-03, FR-07, NFR-04 · UAT-02, UAT-11 |
